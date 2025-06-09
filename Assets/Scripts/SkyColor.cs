@@ -1,46 +1,40 @@
-using UnityEngine;
+// using UnityEngine;
 
-public class ContinuousSkyColorChanger : MonoBehaviour
-{
-    public Color[] skyColors;              // Colors to cycle through (should not include black)
-    public float colorFadeDuration = 2f;   // Time to fade between each color
+// public class ContinuousSkyColorChanger : MonoBehaviour
+// {
+//     public Color targetSkyColor = Color.blue;     // Final sky color after all objects are gazed
+//     public float colorFadeDuration = 2f;         // Time to fade from black to red
 
-    private int currentColorIndex = -1;    // Start before first color (fade from black)
-    private int nextColorIndex = 0;
-    private float fadeTimer = 0f;
-    private Color currentBaseColor = Color.black;
+//     private bool transitionStarted = false;
+//     private bool transitionComplete = false;
+//     private float fadeTimer = 0f;
 
-    void Start()
-    {
-        if (skyColors == null || skyColors.Length == 0)
-        {
-            Debug.LogWarning("Assign at least one color in skyColors");
-            enabled = false;
-            return;
-        }
+//     void Start()
+//     {
+//         Camera.main.backgroundColor = Color.black;
+//     }
 
-        Camera.main.backgroundColor = Color.black;
-        currentColorIndex = -1; // So we fade from black first
-        nextColorIndex = 0;
-        fadeTimer = 0f;
-    }
+//     void Update()
+//     {
+//         if (!transitionStarted && ShaderGraphToonController.AllObjectsGazedAtLeastOnce())
+//         {
+//             transitionStarted = true;
+//             fadeTimer = 0f;
+//             Debug.Log("🌇 All objects gazed — starting sky transition from black to red.");
+//         }
 
-    void Update()
-    {
-        fadeTimer += Time.deltaTime;
+//         if (transitionStarted && !transitionComplete)
+//         {
+//             fadeTimer += Time.deltaTime;
+//             float t = Mathf.Clamp01(fadeTimer / colorFadeDuration);
 
-        float t = Mathf.Clamp01(fadeTimer / colorFadeDuration);
+//             Camera.main.backgroundColor = Color.Lerp(Color.black, targetSkyColor, t);
 
-        Color fromColor = (currentColorIndex == -1) ? Color.black : skyColors[currentColorIndex];
-        Color toColor = skyColors[nextColorIndex];
-
-        Camera.main.backgroundColor = Color.Lerp(fromColor, toColor, t);
-
-        if (t >= 1f)
-        {
-            fadeTimer = 0f;
-            currentColorIndex = nextColorIndex;
-            nextColorIndex = (nextColorIndex + 1) % skyColors.Length;
-        }
-    }
-}
+//             if (t >= 1f)
+//             {
+//                 transitionComplete = true;
+//                 Debug.Log("✅ Sky transition complete.");
+//             }
+//         }
+//     }
+// }

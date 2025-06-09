@@ -1,73 +1,113 @@
 using UnityEngine;
 
-public class DddScript : MonoBehaviour
+public class SmoothGazeReticle : MonoBehaviour
 {
-    Transform vrCamera;
-
     public GameObject reticle;
-
-    // minimum and maximum scale for the reticle
     public float minScale = 0.1f;
     public float maxScale = 1f;
+    public float positionSmoothTime = 0.05f;
+    public float rotationSmoothTime = 0.05f;
+
+    private Transform vrCamera;
+    private Vector3 velocity = Vector3.zero;
+    private Vector3 targetPosition;
+    private Quaternion targetRotation;
+    private Renderer reticleRenderer;
+
+    private GameObject currentHitObject = null;
 
     void Start()
     {
+        vrCamera = Camera.main?.transform;
 
-        Camera mainCam = Camera.main;
-        if (mainCam != null)
-        {
-            vrCamera = mainCam.transform;
-        }
+        if (reticle != null)
+            reticleRenderer = reticle.GetComponent<Renderer>();
 
+        if (reticleRenderer != null)
+            reticleRenderer.enabled = false; // start invisible
     }
 
     void Update()
     {
-        //create a ray from the camera 
+        if (vrCamera == null || reticle == null)
+            return;
+
         Ray ray = new Ray(vrCamera.position, vrCamera.forward);
-
-        // ignorer Reticle layer
-        LayerMask layerMask = LayerMask.GetMask("Default"); // Adjust as needed
-
-
-        //Show ray
         Debug.DrawRay(ray.origin, ray.direction * 100f, Color.red);
-        RaycastHit hit;
-        // Perform raycast to detect surface
-        // use layer mask to filter out unwanted layers if necessary
-        if (Physics.Raycast(ray, out hit, 100f, layerMask))
+
+        if (Physics.Raycast(ray, out RaycastHit hit, 100f))
         {
-            // Get the point where the ray hits the surface
-            Vector3 hitPoint = hit.point;
+            GameObject hitObject = hit.collider.gameObject;
 
-            // Set the reticle position to the hit point
-            reticle.transform.position = hitPoint;
+            if (hitObject != currentHitObject)
+            {
+                // New object hit — snap reticle to hit point instantly and show it
+                currentHitObject = hitObject;
+                targetPosition = hit.point;
+                reticle.transform.position = targetPosition;
 
-            // Set the reticle rotation to face the camera
-            reticle.transform.rotation = Quaternion.LookRotation(vrCamera.forward);
+                Vector3 toCamera = (vrCamera.position - hit.point).normalized;
+                Vector3 projectedForward = Vector3.ProjectOnPlane(-toCamera, hit.normal);
+                if (projectedForward.sqrMagnitude < 0.0001f)
+                {
+                    projectedForward = Vector3.Cross(hit.normal, Vector3.up);
+                    if (projectedForward.sqrMagnitude < 0.0001f)
+                        projectedForward = Vector3.Cross(hit.normal, Vector3.right);
+                    projectedForward.Normalize();
+                }
+                else
+                {
+                    projectedForward.Normalize();
+                }
+                targetRotation = Quaternion.LookRotation(projectedForward, hit.normal);
+                reticle.transform.rotation = targetRotation;
 
-            // set the orientation of the reticle to match the surface normal
-            reticle.transform.rotation = Quaternion.FromToRotation(Vector3.up, hit.normal) * reticle.transform.rotation;
-            // Optionally, you can adjust the scale of the reticle based on distance
-            float distance = Vector3.Distance(vrCamera.position, hitPoint);
-            float scale = Mathf.Clamp(distance / 10f, minScale, maxScale); // Adjust scale as needed
-            reticle.transform.localScale = new Vector3(scale, scale, scale);
+                // Scale instantly on new hit
+                float distance = Vector3.Distance(vrCamera.position, hit.point);
+                float scale = Mathf.Clamp(distance / 10f, minScale, maxScale);
+                reticle.transform.localScale = Vector3.one * scale;
 
-        
+                if (reticleRenderer != null && !reticleRenderer.enabled)
+                    reticleRenderer.enabled = true;
+
+                // Reset velocity for smooth damping
+                velocity = Vector3.zero;
+            }
+            else
+            {
+                // Same object — smooth move/rotate/scale reticle
+                targetPosition = hit.point;
+
+                Vector3 toCamera = (vrCamera.position - hit.point).normalized;
+                Vector3 projectedForward = Vector3.ProjectOnPlane(-toCamera, hit.normal);
+                if (projectedForward.sqrMagnitude < 0.0001f)
+                {
+                    projectedForward = Vector3.Cross(hit.normal, Vector3.up);
+                    if (projectedForward.sqrMagnitude < 0.0001f)
+                        projectedForward = Vector3.Cross(hit.normal, Vector3.right);
+                    projectedForward.Normalize();
+                }
+                else
+                {
+                    projectedForward.Normalize();
+                }
+                targetRotation = Quaternion.LookRotation(projectedForward, hit.normal);
+
+                float distance = Vector3.Distance(vrCamera.position, hit.point);
+                float scale = Mathf.Clamp(distance / 10f, minScale, maxScale);
+                reticle.transform.localScale = Vector3.one * scale;
+
+                reticle.transform.position = Vector3.SmoothDamp(reticle.transform.position, targetPosition, ref velocity, positionSmoothTime);
+                reticle.transform.rotation = Quaternion.Slerp(reticle.transform.rotation, targetRotation, Time.deltaTime / rotationSmoothTime);
+            }
         }
-
         else
         {
-            // Use the reticle renderer component to disable the reticle if no surface is hit
-           
+            // No hit — hide reticle and clear current object
+            currentHitObject = null;
+
+            if (reticleRenderer != null && reticleRenderer.enabled)
+                reticleRenderer.enabled = false;
         }
-       
- // Garde une taille constante (taille angulaire fixe)
-        // float scale = 2 * Mathf.Tan(sizeInDegrees * Mathf.Deg2Rad / 2) * Vector3.Distance(cameraTransform.position, targetPosition);
-        // transform.localScale = Vector3.one * scale;
-
     }
-
-    // Smooth transitions
-
 }

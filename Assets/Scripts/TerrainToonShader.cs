@@ -24,41 +24,39 @@ public class TerrainToonController : MonoBehaviour
 
     [Header("Gaze Settings")]
     public Transform gazeTarget;
-    public float gazeDistance = 50f;
-    public float sphereCastRadius = 1.0f; // Plus tolérant
+    public float gazeDistance = 100f;
 
     [Header("Visual Settings")]
     [SerializeField] private Vector2 minMax = new Vector2(0.1f, 0.9f);
-    [SerializeField] private float colorFadeDuration = 2f;
+
+    [Tooltip("Duration in seconds for the color to fully fade from one to another")]
+    [SerializeField] private float colorFadeDuration = 10f;
 
     private int currentPaletteIndex = -1;
     private Color previousColor = Color.black;
     private Color currentColor = Color.black;
     private Color targetColor;
 
-    private float currentShades = 4f;
-    private float colorFadeTimer = 4f;
+    private float currentShades = 0.1f;
+    private float colorFadeTimer = 0f;
     private bool isFading = false;
-    private bool waitingForNextGaze = true;
 
     private void OnEnable()
     {
         terrain = GetComponent<Terrain>();
 
         if (terrain.materialTemplate == null)
-        {
-            Debug.LogWarning("Assign a terrain material that supports _Color and _Shades.");
-            return;
-        }
+            Debug.LogWarning("Terrain material must support _Color and _Shades.");
 
         if (block == null)
             block = new MaterialPropertyBlock();
 
-        currentColor = Color.black;
-        previousColor = Color.black;
-        currentShades = 0.1f;
+        currentColor = previousColor = Color.black;
         currentPaletteIndex = Random.Range(0, colorPalette.Length);
         targetColor = colorPalette[currentPaletteIndex];
+
+        colorFadeTimer = 0f;
+        isFading = false;
 
         ApplyPropertyBlock();
     }
@@ -68,48 +66,42 @@ public class TerrainToonController : MonoBehaviour
         if (!Application.isPlaying || gazeTarget == null || terrain == null)
             return;
 
-        if (isFading)
+        if (IsTerrainFirstHit())
         {
+            if (!isFading)
+                StartNextFade();
+
             colorFadeTimer += Time.deltaTime;
+
             float t = Mathf.Clamp01(colorFadeTimer / colorFadeDuration);
             currentColor = Color.Lerp(previousColor, targetColor, t);
 
-            if (t >= 1f)
-            {
-                isFading = false;
-                waitingForNextGaze = true;
-            }
-
             ApplyPropertyBlock();
-        }
-        else if (waitingForNextGaze && IsGazingAtTerrain())
-        {
-            NextColor();
+
+            if (t >= 1f)
+                isFading = false;
         }
     }
 
-    private void NextColor()
+    private void StartNextFade()
     {
-        waitingForNextGaze = false;
         isFading = true;
         colorFadeTimer = 0f;
-
         previousColor = currentColor;
         currentPaletteIndex = (currentPaletteIndex + 1) % colorPalette.Length;
         targetColor = colorPalette[currentPaletteIndex];
     }
 
-    private bool IsGazingAtTerrain()
+    private bool IsTerrainFirstHit()
     {
-        if (gazeTarget == null)
-            return false;
-
         Ray ray = new Ray(gazeTarget.position, gazeTarget.forward);
-        if (Physics.SphereCast(ray, sphereCastRadius, out RaycastHit hit, gazeDistance))
-        {
-            return hit.collider != null && hit.collider.gameObject == terrain.gameObject;
-        }
+        RaycastHit[] hits = Physics.RaycastAll(ray, Mathf.Infinity);
 
+        foreach (var hit in hits)
+        {
+            if (hit.collider != null && hit.collider.gameObject == terrain.gameObject)
+                return true;
+        }
         return false;
     }
 
@@ -126,29 +118,25 @@ public class TerrainToonController : MonoBehaviour
 #if UNITY_EDITOR
     private void OnValidate()
     {
-        if (terrain == null)
-            terrain = GetComponent<Terrain>();
-
+        terrain = GetComponent<Terrain>();
         if (block == null)
             block = new MaterialPropertyBlock();
 
         currentColor = Color.black;
         currentShades = 0.1f;
-
         ApplyPropertyBlock();
     }
 
     private void OnDrawGizmos()
     {
         if (gazeTarget == null) return;
-
         Gizmos.color = Color.cyan;
         Gizmos.DrawLine(gazeTarget.position, gazeTarget.position + gazeTarget.forward * gazeDistance);
 
         Ray ray = new Ray(gazeTarget.position, gazeTarget.forward);
         if (Physics.Raycast(ray, out RaycastHit hit, gazeDistance))
         {
-            Gizmos.color = Color.black;
+            Gizmos.color = hit.collider.gameObject == terrain.gameObject ? Color.green : Color.red;
             Gizmos.DrawSphere(hit.point, 0.2f);
         }
     }
