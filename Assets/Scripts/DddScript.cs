@@ -1,30 +1,35 @@
 using UnityEngine;
 
-public class SmoothGazeReticle : MonoBehaviour
+public class DddScript : MonoBehaviour
 {
-    public GameObject reticle;
-    public float minScale = 0.1f;
-    public float maxScale = 1f;
-    public float positionSmoothTime = 0.05f;
-    public float rotationSmoothTime = 0.05f;
-
     private Transform vrCamera;
-    private Vector3 velocity = Vector3.zero;
-    private Vector3 targetPosition;
-    private Quaternion targetRotation;
     private Renderer reticleRenderer;
 
-    private GameObject currentHitObject = null;
+    public GameObject reticle;           // Parent GameObject of the reticle (e.g., an empty with the mesh as child)
+    public float minScale = 0.1f;
+    public float maxScale = 1f;
 
     void Start()
     {
-        vrCamera = Camera.main?.transform;
+        Camera mainCam = Camera.main;
+        if (mainCam != null)
+        {
+            vrCamera = mainCam.transform;
+        }
+        else
+        {
+            Debug.LogError("Main camera not found!");
+        }
 
+        // Find MeshRenderer in child (e.g., the cylinder)
         if (reticle != null)
-            reticleRenderer = reticle.GetComponent<Renderer>();
-
-        if (reticleRenderer != null)
-            reticleRenderer.enabled = false; // start invisible
+        {
+            reticleRenderer = reticle.GetComponentInChildren<Renderer>();
+            if (reticleRenderer != null)
+                reticleRenderer.enabled = false;
+            else
+                Debug.LogError("Reticle Renderer not found!");
+        }
     }
 
     void Update()
@@ -35,77 +40,35 @@ public class SmoothGazeReticle : MonoBehaviour
         Ray ray = new Ray(vrCamera.position, vrCamera.forward);
         Debug.DrawRay(ray.origin, ray.direction * 100f, Color.red);
 
-        if (Physics.Raycast(ray, out RaycastHit hit, 100f))
+        LayerMask layerMask = LayerMask.GetMask("Default"); // Adjust if needed
+        if (Physics.Raycast(ray, out RaycastHit hit, 100f, layerMask))
         {
-            GameObject hitObject = hit.collider.gameObject;
+            // Position
+            Vector3 hitPoint = hit.point;
+            reticle.transform.position = hitPoint;
 
-            if (hitObject != currentHitObject)
-            {
-                // New object hit — snap reticle to hit point instantly and show it
-                currentHitObject = hitObject;
-                targetPosition = hit.point;
-                reticle.transform.position = targetPosition;
+            // Rotation: lay flat on the surface, and face the camera properly
+            Vector3 up = hit.normal;
+            Vector3 toCamera = (vrCamera.position - hitPoint).normalized;
+            Vector3 forward = Vector3.ProjectOnPlane(toCamera, up).normalized;
 
-                Vector3 toCamera = (vrCamera.position - hit.point).normalized;
-                Vector3 projectedForward = Vector3.ProjectOnPlane(-toCamera, hit.normal);
-                if (projectedForward.sqrMagnitude < 0.0001f)
-                {
-                    projectedForward = Vector3.Cross(hit.normal, Vector3.up);
-                    if (projectedForward.sqrMagnitude < 0.0001f)
-                        projectedForward = Vector3.Cross(hit.normal, Vector3.right);
-                    projectedForward.Normalize();
-                }
-                else
-                {
-                    projectedForward.Normalize();
-                }
-                targetRotation = Quaternion.LookRotation(projectedForward, hit.normal);
-                reticle.transform.rotation = targetRotation;
-
-                // Scale instantly on new hit
-                float distance = Vector3.Distance(vrCamera.position, hit.point);
-                float scale = Mathf.Clamp(distance / 10f, minScale, maxScale);
-                reticle.transform.localScale = Vector3.one * scale;
-
-                if (reticleRenderer != null && !reticleRenderer.enabled)
-                    reticleRenderer.enabled = true;
-
-                // Reset velocity for smooth damping
-                velocity = Vector3.zero;
-            }
+            if (forward.sqrMagnitude > 0.001f)
+                reticle.transform.rotation = Quaternion.LookRotation(forward, up);
             else
-            {
-                // Same object — smooth move/rotate/scale reticle
-                targetPosition = hit.point;
+                reticle.transform.rotation = Quaternion.LookRotation(Vector3.forward, up); // fallback
 
-                Vector3 toCamera = (vrCamera.position - hit.point).normalized;
-                Vector3 projectedForward = Vector3.ProjectOnPlane(-toCamera, hit.normal);
-                if (projectedForward.sqrMagnitude < 0.0001f)
-                {
-                    projectedForward = Vector3.Cross(hit.normal, Vector3.up);
-                    if (projectedForward.sqrMagnitude < 0.0001f)
-                        projectedForward = Vector3.Cross(hit.normal, Vector3.right);
-                    projectedForward.Normalize();
-                }
-                else
-                {
-                    projectedForward.Normalize();
-                }
-                targetRotation = Quaternion.LookRotation(projectedForward, hit.normal);
+            // Scale by distance
+            float distance = Vector3.Distance(vrCamera.position, hitPoint);
+            float scale = Mathf.Clamp(distance / 10f, minScale, maxScale);
+            reticle.transform.localScale = Vector3.one * scale;
 
-                float distance = Vector3.Distance(vrCamera.position, hit.point);
-                float scale = Mathf.Clamp(distance / 10f, minScale, maxScale);
-                reticle.transform.localScale = Vector3.one * scale;
-
-                reticle.transform.position = Vector3.SmoothDamp(reticle.transform.position, targetPosition, ref velocity, positionSmoothTime);
-                reticle.transform.rotation = Quaternion.Slerp(reticle.transform.rotation, targetRotation, Time.deltaTime / rotationSmoothTime);
-            }
+            // Show reticle
+            if (reticleRenderer != null && !reticleRenderer.enabled)
+                reticleRenderer.enabled = true;
         }
         else
         {
-            // No hit — hide reticle and clear current object
-            currentHitObject = null;
-
+            // Hide reticle if no hit
             if (reticleRenderer != null && reticleRenderer.enabled)
                 reticleRenderer.enabled = false;
         }
