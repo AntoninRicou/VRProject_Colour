@@ -6,6 +6,10 @@ using System.Collections; // ✅ Needed for IEnumerator
 [RequireComponent(typeof(MeshCollider))]
 public class ShaderGraphToonController : MonoBehaviour
 {
+    // Title tracking
+    [Header("Title Tracking")]
+    public bool isTitleGroup = false;
+
     // === Static Tracking ===
     private static List<ShaderGraphToonController> allInstances = new List<ShaderGraphToonController>();
     private bool hasBeenGazedOnce = false;
@@ -20,7 +24,17 @@ public class ShaderGraphToonController : MonoBehaviour
         return true;
     }
 
-    
+    public static bool AreAllTitleObjectsGazed()
+    {
+        foreach (var controller in allInstances)
+        {
+            if (controller.isTitleGroup && !controller.hasBeenGazedOnce)
+                return false;
+        }
+        return true;
+    }
+
+
 
     // === Audio ===
     private AudioSource audioSource;
@@ -110,7 +124,6 @@ public class ShaderGraphToonController : MonoBehaviour
             holdComplete = false;
             ResetTimers();
         }
-
         ApplyPropertyBlock();
     }
 
