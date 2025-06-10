@@ -232,7 +232,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 30
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -325,7 +325,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3517413981310652797, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3517413981310652797, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: m_audioClip
@@ -393,7 +393,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8665392252620930762, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -418,7 +418,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3517413981310652797, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3517413981310652797, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: m_audioClip
@@ -490,7 +490,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8665392252620930762, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -520,7 +520,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2689875916185555104, guid: ba45c2500159344b69a9a84f8ae087ae, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -2689875916185555104, guid: ba45c2500159344b69a9a84f8ae087ae, type: 3}
       propertyPath: m_audioClip
@@ -626,7 +626,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2689875916185555104, guid: ba45c2500159344b69a9a84f8ae087ae, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -2689875916185555104, guid: ba45c2500159344b69a9a84f8ae087ae, type: 3}
       propertyPath: m_audioClip
@@ -736,7 +736,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4518151388534660051, guid: bf7b7807db27045bd84a9afb8e120dde, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 4518151388534660051, guid: bf7b7807db27045bd84a9afb8e120dde, type: 3}
       propertyPath: m_audioClip
@@ -831,7 +831,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -2894632955122377827, guid: 7300ed3ea056c4517802a3d3658feec3, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -2894632955122377827, guid: 7300ed3ea056c4517802a3d3658feec3, type: 3}
       propertyPath: m_PlayOnAwake
@@ -1158,7 +1158,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6074960166519319286, guid: 1d88dab988c734948980f564eb4e24da, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 6074960166519319286, guid: 1d88dab988c734948980f564eb4e24da, type: 3}
       propertyPath: m_audioClip
@@ -1325,7 +1325,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8048131134147933829, guid: e0ba7126d542a46ab9a0f45f3b417a43, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1350,7 +1350,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6074960166519319286, guid: 1d88dab988c734948980f564eb4e24da, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 6074960166519319286, guid: 1d88dab988c734948980f564eb4e24da, type: 3}
       propertyPath: m_audioClip
@@ -1447,7 +1447,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2689875916185555104, guid: ba45c2500159344b69a9a84f8ae087ae, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -2689875916185555104, guid: ba45c2500159344b69a9a84f8ae087ae, type: 3}
       propertyPath: m_audioClip
@@ -1544,7 +1544,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -5005998288018854177, guid: 90dba086dfb8f44ddbc339dedbbe4471, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -5005998288018854177, guid: 90dba086dfb8f44ddbc339dedbbe4471, type: 3}
       propertyPath: m_audioClip
@@ -1708,7 +1708,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7637200820476230091, guid: 930046cc974074a1eaeac7f987a17a32, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 8245749495460947089, guid: 930046cc974074a1eaeac7f987a17a32, type: 3}
       propertyPath: m_Name
@@ -1782,7 +1782,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 668153383371603316, guid: efce717dc21374bde80b03ce419d7ab3, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 4812615095006539678, guid: efce717dc21374bde80b03ce419d7ab3, type: 3}
       propertyPath: vrCamera
@@ -1855,7 +1855,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -5005998288018854177, guid: 90dba086dfb8f44ddbc339dedbbe4471, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -5005998288018854177, guid: 90dba086dfb8f44ddbc339dedbbe4471, type: 3}
       propertyPath: m_audioClip
@@ -2025,7 +2025,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 30
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -2118,7 +2118,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6074960166519319286, guid: 1d88dab988c734948980f564eb4e24da, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 6074960166519319286, guid: 1d88dab988c734948980f564eb4e24da, type: 3}
       propertyPath: m_audioClip
@@ -2228,7 +2228,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 30
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -2321,7 +2321,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3517413981310652797, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3517413981310652797, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: m_audioClip
@@ -2393,7 +2393,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8665392252620930762, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2516,7 +2516,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5285306015630852816, guid: 2e2da75346f7c4e15b130c081a7b0f9b, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 5285306015630852816, guid: 2e2da75346f7c4e15b130c081a7b0f9b, type: 3}
       propertyPath: m_audioClip
@@ -2540,7 +2540,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9067572275201942746, guid: 2e2da75346f7c4e15b130c081a7b0f9b, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 9067572275201942746, guid: 2e2da75346f7c4e15b130c081a7b0f9b, type: 3}
       propertyPath: m_audioClip
@@ -2706,7 +2706,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2686692540460320312, guid: 2c1edde6b4ed04667b6228b2408a7761, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -2686692540460320312, guid: 2c1edde6b4ed04667b6228b2408a7761, type: 3}
       propertyPath: m_audioClip
@@ -2807,7 +2807,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7704364939615562864, guid: d2c5b8354172141e2952571b5b0cc660, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -7704364939615562864, guid: d2c5b8354172141e2952571b5b0cc660, type: 3}
       propertyPath: m_PlayOnAwake
@@ -2953,7 +2953,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3517413981310652797, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3517413981310652797, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: m_audioClip
@@ -3025,7 +3025,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8665392252620930762, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3055,7 +3055,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -4959501403646342214, guid: 408a83a74523d446b990d0b04e240fac, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -4959501403646342214, guid: 408a83a74523d446b990d0b04e240fac, type: 3}
       propertyPath: m_PlayOnAwake
@@ -3173,7 +3173,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6074960166519319286, guid: 1d88dab988c734948980f564eb4e24da, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 6074960166519319286, guid: 1d88dab988c734948980f564eb4e24da, type: 3}
       propertyPath: m_audioClip
@@ -3276,6 +3276,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3455dff59a845461a854593eea9d5314, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isTitleGroup: 0
   gazeClips:
   - {fileID: 8300000, guid: e274ece2166774f6a9fe084a83c60745, type: 3}
   - {fileID: 8300000, guid: cc082707a842048998984d7ad257e55d, type: 3}
@@ -3360,7 +3361,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -5005998288018854177, guid: 90dba086dfb8f44ddbc339dedbbe4471, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -5005998288018854177, guid: 90dba086dfb8f44ddbc339dedbbe4471, type: 3}
       propertyPath: MinDistance
@@ -3474,7 +3475,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4518151388534660051, guid: bf7b7807db27045bd84a9afb8e120dde, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 4518151388534660051, guid: bf7b7807db27045bd84a9afb8e120dde, type: 3}
       propertyPath: m_audioClip
@@ -3568,7 +3569,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 30
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -3701,6 +3702,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3455dff59a845461a854593eea9d5314, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isTitleGroup: 1
   gazeClips:
   - {fileID: 8300000, guid: e274ece2166774f6a9fe084a83c60745, type: 3}
   - {fileID: 8300000, guid: cc082707a842048998984d7ad257e55d, type: 3}
@@ -3797,7 +3799,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.7
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -3806,7 +3808,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 30
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -3841,7 +3843,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -4065,7 +4067,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2689875916185555104, guid: ba45c2500159344b69a9a84f8ae087ae, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -2689875916185555104, guid: ba45c2500159344b69a9a84f8ae087ae, type: 3}
       propertyPath: m_audioClip
@@ -4166,7 +4168,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2686692540460320312, guid: 2c1edde6b4ed04667b6228b2408a7761, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -2686692540460320312, guid: 2c1edde6b4ed04667b6228b2408a7761, type: 3}
       propertyPath: m_audioClip
@@ -4357,7 +4359,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4518151388534660051, guid: bf7b7807db27045bd84a9afb8e120dde, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 4518151388534660051, guid: bf7b7807db27045bd84a9afb8e120dde, type: 3}
       propertyPath: m_audioClip
@@ -4455,7 +4457,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6074960166519319286, guid: 1d88dab988c734948980f564eb4e24da, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 6074960166519319286, guid: 1d88dab988c734948980f564eb4e24da, type: 3}
       propertyPath: m_audioClip
@@ -4566,7 +4568,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2689875916185555104, guid: ba45c2500159344b69a9a84f8ae087ae, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -2689875916185555104, guid: ba45c2500159344b69a9a84f8ae087ae, type: 3}
       propertyPath: m_audioClip
@@ -4813,7 +4815,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7704364939615562864, guid: d2c5b8354172141e2952571b5b0cc660, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -7704364939615562864, guid: d2c5b8354172141e2952571b5b0cc660, type: 3}
       propertyPath: m_PlayOnAwake
@@ -4918,7 +4920,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 30
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -5016,7 +5018,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6074960166519319286, guid: 1d88dab988c734948980f564eb4e24da, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 6074960166519319286, guid: 1d88dab988c734948980f564eb4e24da, type: 3}
       propertyPath: m_audioClip
@@ -5218,7 +5220,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6074960166519319286, guid: 1d88dab988c734948980f564eb4e24da, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 6074960166519319286, guid: 1d88dab988c734948980f564eb4e24da, type: 3}
       propertyPath: m_audioClip
@@ -5328,7 +5330,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 30
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -5421,7 +5423,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7613890470635774891, guid: f51d74872706c4d6bbcc64080a4aa22b, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -7613890470635774891, guid: f51d74872706c4d6bbcc64080a4aa22b, type: 3}
       propertyPath: m_PlayOnAwake
@@ -5522,7 +5524,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4518151388534660051, guid: bf7b7807db27045bd84a9afb8e120dde, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 4518151388534660051, guid: bf7b7807db27045bd84a9afb8e120dde, type: 3}
       propertyPath: m_audioClip
@@ -5624,7 +5626,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 30
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -5722,7 +5724,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2686692540460320312, guid: 2c1edde6b4ed04667b6228b2408a7761, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -2686692540460320312, guid: 2c1edde6b4ed04667b6228b2408a7761, type: 3}
       propertyPath: m_audioClip
@@ -5819,7 +5821,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -6141129144356265105, guid: 7eb5a682b0d6346fab9577e461ec74ad, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -6141129144356265105, guid: 7eb5a682b0d6346fab9577e461ec74ad, type: 3}
       propertyPath: m_PlayOnAwake
@@ -5917,7 +5919,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2689875916185555104, guid: ba45c2500159344b69a9a84f8ae087ae, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -2689875916185555104, guid: ba45c2500159344b69a9a84f8ae087ae, type: 3}
       propertyPath: m_audioClip
@@ -6014,7 +6016,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6074960166519319286, guid: 1d88dab988c734948980f564eb4e24da, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 6074960166519319286, guid: 1d88dab988c734948980f564eb4e24da, type: 3}
       propertyPath: m_audioClip
@@ -6116,7 +6118,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 30
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -6218,7 +6220,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7637200820476230091, guid: 930046cc974074a1eaeac7f987a17a32, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 8245749495460947089, guid: 930046cc974074a1eaeac7f987a17a32, type: 3}
       propertyPath: m_Name
@@ -6312,7 +6314,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 30
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -6414,6 +6416,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3455dff59a845461a854593eea9d5314, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isTitleGroup: 1
   gazeClips:
   - {fileID: 8300000, guid: e274ece2166774f6a9fe084a83c60745, type: 3}
   - {fileID: 8300000, guid: cc082707a842048998984d7ad257e55d, type: 3}
@@ -6510,7 +6513,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.7
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -6519,7 +6522,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 30
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -6554,7 +6557,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -6756,6 +6759,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1767192433, guid: 5a5a0ebe9187844b1842047ba021dd79, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2118551998}
+    - targetCorrespondingSourceObject: {fileID: 1767192433, guid: 5a5a0ebe9187844b1842047ba021dd79, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2118552003}
   m_SourcePrefab: {fileID: 100100000, guid: 5a5a0ebe9187844b1842047ba021dd79, type: 3}
 --- !u!4 &445672229 stripped
 Transform:
@@ -6780,7 +6786,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 668153383371603316, guid: efce717dc21374bde80b03ce419d7ab3, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 4812615095006539678, guid: efce717dc21374bde80b03ce419d7ab3, type: 3}
       propertyPath: vrCamera
@@ -6858,7 +6864,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -6141129144356265105, guid: 7eb5a682b0d6346fab9577e461ec74ad, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -6141129144356265105, guid: 7eb5a682b0d6346fab9577e461ec74ad, type: 3}
       propertyPath: m_PlayOnAwake
@@ -6956,7 +6962,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 148909843419193095, guid: 808e7151cd7dd4c45a7cf3b35176b363, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 148909843419193095, guid: 808e7151cd7dd4c45a7cf3b35176b363, type: 3}
       propertyPath: m_audioClip
@@ -7036,7 +7042,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8469273510618488478, guid: 808e7151cd7dd4c45a7cf3b35176b363, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 8469273510618488478, guid: 808e7151cd7dd4c45a7cf3b35176b363, type: 3}
       propertyPath: m_audioClip
@@ -7124,7 +7130,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -6141129144356265105, guid: 7eb5a682b0d6346fab9577e461ec74ad, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -6141129144356265105, guid: 7eb5a682b0d6346fab9577e461ec74ad, type: 3}
       propertyPath: m_PlayOnAwake
@@ -7222,7 +7228,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -5005998288018854177, guid: 90dba086dfb8f44ddbc339dedbbe4471, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -5005998288018854177, guid: 90dba086dfb8f44ddbc339dedbbe4471, type: 3}
       propertyPath: m_audioClip
@@ -7327,7 +7333,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6612713912070201042, guid: 0a8387f2144fb45e4a7e2998f2f00a2d, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 7315664434809004976, guid: 0a8387f2144fb45e4a7e2998f2f00a2d, type: 3}
       propertyPath: m_LocalScale.x
@@ -7448,7 +7454,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3517413981310652797, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3517413981310652797, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: m_audioClip
@@ -7520,7 +7526,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8665392252620930762, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7550,7 +7556,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -6141129144356265105, guid: 7eb5a682b0d6346fab9577e461ec74ad, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -6141129144356265105, guid: 7eb5a682b0d6346fab9577e461ec74ad, type: 3}
       propertyPath: m_PlayOnAwake
@@ -7632,7 +7638,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2686692540460320312, guid: 2c1edde6b4ed04667b6228b2408a7761, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -2686692540460320312, guid: 2c1edde6b4ed04667b6228b2408a7761, type: 3}
       propertyPath: MinDistance
@@ -7711,6 +7717,135 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c1edde6b4ed04667b6228b2408a7761, type: 3}
+--- !u!1 &521138856
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 521138858}
+  - component: {fileID: 521138857}
+  m_Layer: 0
+  m_Name: BGmusic
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &521138857
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 521138856}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 4d7238504f4214c97bbf79197c7a4dd3, type: 3}
+  m_Resource: {fileID: 8300000, guid: 4d7238504f4214c97bbf79197c7a4dd3, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.8
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &521138858
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 521138856}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &522086389 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7931318122137962005, guid: ba45c2500159344b69a9a84f8ae087ae, type: 3}
@@ -7734,7 +7869,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6074960166519319286, guid: 1d88dab988c734948980f564eb4e24da, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 6074960166519319286, guid: 1d88dab988c734948980f564eb4e24da, type: 3}
       propertyPath: m_audioClip
@@ -7831,7 +7966,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -6141129144356265105, guid: 7eb5a682b0d6346fab9577e461ec74ad, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -6141129144356265105, guid: 7eb5a682b0d6346fab9577e461ec74ad, type: 3}
       propertyPath: m_PlayOnAwake
@@ -7968,7 +8103,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 30
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -8104,7 +8239,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2689875916185555104, guid: ba45c2500159344b69a9a84f8ae087ae, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -2689875916185555104, guid: ba45c2500159344b69a9a84f8ae087ae, type: 3}
       propertyPath: m_audioClip
@@ -8216,7 +8351,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3517413981310652797, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3517413981310652797, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: m_audioClip
@@ -8288,7 +8423,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8665392252620930762, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8332,7 +8467,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 30
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -8435,7 +8570,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3517413981310652797, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3517413981310652797, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: m_audioClip
@@ -8507,7 +8642,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8665392252620930762, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8582,7 +8717,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2978557292799810602, guid: d5ee5acfb2e2e403f93cbc6e3c07617d, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 2978557292799810602, guid: d5ee5acfb2e2e403f93cbc6e3c07617d, type: 3}
       propertyPath: m_audioClip
@@ -8610,7 +8745,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5563026566411577003, guid: d5ee5acfb2e2e403f93cbc6e3c07617d, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 5563026566411577003, guid: d5ee5acfb2e2e403f93cbc6e3c07617d, type: 3}
       propertyPath: m_audioClip
@@ -8775,7 +8910,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6074960166519319286, guid: 1d88dab988c734948980f564eb4e24da, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 6074960166519319286, guid: 1d88dab988c734948980f564eb4e24da, type: 3}
       propertyPath: MinDistance
@@ -8885,7 +9020,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 668153383371603316, guid: efce717dc21374bde80b03ce419d7ab3, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 4812615095006539678, guid: efce717dc21374bde80b03ce419d7ab3, type: 3}
       propertyPath: vrCamera
@@ -8968,7 +9103,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -300958115139693548, guid: b94aab8ac29a345fc96f1f43249b4583, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 4046323339671317330, guid: b94aab8ac29a345fc96f1f43249b4583, type: 3}
       propertyPath: vrCamera
@@ -9071,7 +9206,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 30
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -9228,7 +9363,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7927355725670756746, guid: 5f067239ce50e41478a7138a991a3980, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9317,7 +9452,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8048131134147933829, guid: e0ba7126d542a46ab9a0f45f3b417a43, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9357,7 +9492,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2689875916185555104, guid: ba45c2500159344b69a9a84f8ae087ae, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -2689875916185555104, guid: ba45c2500159344b69a9a84f8ae087ae, type: 3}
       propertyPath: m_audioClip
@@ -9464,7 +9599,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6074960166519319286, guid: 1d88dab988c734948980f564eb4e24da, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 6074960166519319286, guid: 1d88dab988c734948980f564eb4e24da, type: 3}
       propertyPath: m_audioClip
@@ -9570,7 +9705,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 30
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -9663,7 +9798,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7704364939615562864, guid: d2c5b8354172141e2952571b5b0cc660, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -7704364939615562864, guid: d2c5b8354172141e2952571b5b0cc660, type: 3}
       propertyPath: m_PlayOnAwake
@@ -9750,6 +9885,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3455dff59a845461a854593eea9d5314, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isTitleGroup: 1
   gazeClips:
   - {fileID: 8300000, guid: e274ece2166774f6a9fe084a83c60745, type: 3}
   - {fileID: 8300000, guid: cc082707a842048998984d7ad257e55d, type: 3}
@@ -9851,7 +9987,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.7
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -9860,7 +9996,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 30
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -9895,7 +10031,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -10013,6 +10149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3455dff59a845461a854593eea9d5314, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isTitleGroup: 1
   gazeClips:
   - {fileID: 8300000, guid: e274ece2166774f6a9fe084a83c60745, type: 3}
   - {fileID: 8300000, guid: cc082707a842048998984d7ad257e55d, type: 3}
@@ -10109,7 +10246,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.7
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -10118,7 +10255,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 30
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -10153,7 +10290,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -10348,7 +10485,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6074960166519319286, guid: 1d88dab988c734948980f564eb4e24da, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 6074960166519319286, guid: 1d88dab988c734948980f564eb4e24da, type: 3}
       propertyPath: m_audioClip
@@ -10454,7 +10591,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3517413981310652797, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3517413981310652797, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: m_audioClip
@@ -10526,7 +10663,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8665392252620930762, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10556,7 +10693,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2689875916185555104, guid: ba45c2500159344b69a9a84f8ae087ae, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -2689875916185555104, guid: ba45c2500159344b69a9a84f8ae087ae, type: 3}
       propertyPath: m_audioClip
@@ -10738,7 +10875,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3517413981310652797, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3517413981310652797, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: m_audioClip
@@ -10810,7 +10947,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8665392252620930762, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10845,7 +10982,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2689875916185555104, guid: ba45c2500159344b69a9a84f8ae087ae, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -2689875916185555104, guid: ba45c2500159344b69a9a84f8ae087ae, type: 3}
       propertyPath: m_audioClip
@@ -11038,7 +11175,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2689875916185555104, guid: ba45c2500159344b69a9a84f8ae087ae, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -2689875916185555104, guid: ba45c2500159344b69a9a84f8ae087ae, type: 3}
       propertyPath: m_audioClip
@@ -11143,7 +11280,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4518151388534660051, guid: bf7b7807db27045bd84a9afb8e120dde, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 4518151388534660051, guid: bf7b7807db27045bd84a9afb8e120dde, type: 3}
       propertyPath: MinDistance
@@ -11245,7 +11382,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 30
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -11342,7 +11479,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2026607439883925078, guid: 75d7544339ce046509e25375e80b7d94, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 2026607439883925078, guid: 75d7544339ce046509e25375e80b7d94, type: 3}
       propertyPath: m_PlayOnAwake
@@ -11440,7 +11577,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 30
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -11533,7 +11670,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6074960166519319286, guid: 1d88dab988c734948980f564eb4e24da, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 6074960166519319286, guid: 1d88dab988c734948980f564eb4e24da, type: 3}
       propertyPath: m_audioClip
@@ -11631,7 +11768,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2689875916185555104, guid: ba45c2500159344b69a9a84f8ae087ae, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -2689875916185555104, guid: ba45c2500159344b69a9a84f8ae087ae, type: 3}
       propertyPath: m_audioClip
@@ -11733,7 +11870,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6074960166519319286, guid: 1d88dab988c734948980f564eb4e24da, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 6074960166519319286, guid: 1d88dab988c734948980f564eb4e24da, type: 3}
       propertyPath: m_audioClip
@@ -11834,7 +11971,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -6141129144356265105, guid: 7eb5a682b0d6346fab9577e461ec74ad, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -6141129144356265105, guid: 7eb5a682b0d6346fab9577e461ec74ad, type: 3}
       propertyPath: m_PlayOnAwake
@@ -11932,7 +12069,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2501512549809119662, guid: 6891ef9d0da3d4ca3b5ce93d9d7c0049, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 2501512549809119662, guid: 6891ef9d0da3d4ca3b5ce93d9d7c0049, type: 3}
       propertyPath: MinDistance
@@ -12016,7 +12153,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9035018370041710207, guid: 6891ef9d0da3d4ca3b5ce93d9d7c0049, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12041,7 +12178,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6074960166519319286, guid: 1d88dab988c734948980f564eb4e24da, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 6074960166519319286, guid: 1d88dab988c734948980f564eb4e24da, type: 3}
       propertyPath: MinDistance
@@ -12151,7 +12288,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6074960166519319286, guid: 1d88dab988c734948980f564eb4e24da, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 6074960166519319286, guid: 1d88dab988c734948980f564eb4e24da, type: 3}
       propertyPath: m_audioClip
@@ -12248,7 +12385,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -6141129144356265105, guid: 7eb5a682b0d6346fab9577e461ec74ad, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -6141129144356265105, guid: 7eb5a682b0d6346fab9577e461ec74ad, type: 3}
       propertyPath: m_PlayOnAwake
@@ -12370,7 +12507,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 30
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -12473,7 +12610,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -6141129144356265105, guid: 7eb5a682b0d6346fab9577e461ec74ad, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -6141129144356265105, guid: 7eb5a682b0d6346fab9577e461ec74ad, type: 3}
       propertyPath: m_PlayOnAwake
@@ -12628,7 +12765,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 30
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -12800,7 +12937,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7927355725670756746, guid: 5f067239ce50e41478a7138a991a3980, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12899,7 +13036,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6074960166519319286, guid: 1d88dab988c734948980f564eb4e24da, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 6074960166519319286, guid: 1d88dab988c734948980f564eb4e24da, type: 3}
       propertyPath: m_audioClip
@@ -13005,7 +13142,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2686692540460320312, guid: 2c1edde6b4ed04667b6228b2408a7761, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -2686692540460320312, guid: 2c1edde6b4ed04667b6228b2408a7761, type: 3}
       propertyPath: m_audioClip
@@ -13098,6 +13235,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3455dff59a845461a854593eea9d5314, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isTitleGroup: 1
   gazeClips:
   - {fileID: 8300000, guid: e274ece2166774f6a9fe084a83c60745, type: 3}
   - {fileID: 8300000, guid: cc082707a842048998984d7ad257e55d, type: 3}
@@ -13194,7 +13332,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.7
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -13203,7 +13341,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 30
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -13238,7 +13376,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -13335,7 +13473,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3517413981310652797, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3517413981310652797, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: m_audioClip
@@ -13407,7 +13545,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8665392252620930762, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13489,7 +13627,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 30
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -13587,7 +13725,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2689875916185555104, guid: ba45c2500159344b69a9a84f8ae087ae, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -2689875916185555104, guid: ba45c2500159344b69a9a84f8ae087ae, type: 3}
       propertyPath: m_audioClip
@@ -13744,7 +13882,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8048131134147933829, guid: e0ba7126d542a46ab9a0f45f3b417a43, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13774,7 +13912,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2689875916185555104, guid: ba45c2500159344b69a9a84f8ae087ae, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -2689875916185555104, guid: ba45c2500159344b69a9a84f8ae087ae, type: 3}
       propertyPath: m_audioClip
@@ -13875,7 +14013,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6612713912070201042, guid: 0a8387f2144fb45e4a7e2998f2f00a2d, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 7315664434809004976, guid: 0a8387f2144fb45e4a7e2998f2f00a2d, type: 3}
       propertyPath: m_LocalScale.x
@@ -13960,7 +14098,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 214160510294087946, guid: 9d0d6107f90b14d3690f1f7f1b9dd8b6, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 1250771794673823948, guid: 9d0d6107f90b14d3690f1f7f1b9dd8b6, type: 3}
       propertyPath: m_LocalScale.x
@@ -14049,7 +14187,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2501512549809119662, guid: 6891ef9d0da3d4ca3b5ce93d9d7c0049, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 2501512549809119662, guid: 6891ef9d0da3d4ca3b5ce93d9d7c0049, type: 3}
       propertyPath: MinDistance
@@ -14117,7 +14255,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9035018370041710207, guid: 6891ef9d0da3d4ca3b5ce93d9d7c0049, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14142,7 +14280,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -6141129144356265105, guid: 7eb5a682b0d6346fab9577e461ec74ad, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -6141129144356265105, guid: 7eb5a682b0d6346fab9577e461ec74ad, type: 3}
       propertyPath: m_PlayOnAwake
@@ -14297,7 +14435,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 30
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -14390,7 +14528,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7704364939615562864, guid: d2c5b8354172141e2952571b5b0cc660, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -7704364939615562864, guid: d2c5b8354172141e2952571b5b0cc660, type: 3}
       propertyPath: m_PlayOnAwake
@@ -14500,7 +14638,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 30
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -14598,7 +14736,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 214160510294087946, guid: 9d0d6107f90b14d3690f1f7f1b9dd8b6, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 1250771794673823948, guid: 9d0d6107f90b14d3690f1f7f1b9dd8b6, type: 3}
       propertyPath: m_LocalScale.x
@@ -14692,7 +14830,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -5005998288018854177, guid: 90dba086dfb8f44ddbc339dedbbe4471, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -5005998288018854177, guid: 90dba086dfb8f44ddbc339dedbbe4471, type: 3}
       propertyPath: MinDistance
@@ -14793,7 +14931,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 617567244592476134, guid: 4a06f9d52889b47ec8a4c8e45aa3debd, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3504796322696105582, guid: 4a06f9d52889b47ec8a4c8e45aa3debd, type: 3}
       propertyPath: vrCamera
@@ -14892,7 +15030,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -300958115139693548, guid: b94aab8ac29a345fc96f1f43249b4583, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 4046323339671317330, guid: b94aab8ac29a345fc96f1f43249b4583, type: 3}
       propertyPath: vrCamera
@@ -14986,7 +15124,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -6141129144356265105, guid: 7eb5a682b0d6346fab9577e461ec74ad, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -6141129144356265105, guid: 7eb5a682b0d6346fab9577e461ec74ad, type: 3}
       propertyPath: m_PlayOnAwake
@@ -15093,7 +15231,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 30
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -15194,7 +15332,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4518151388534660051, guid: bf7b7807db27045bd84a9afb8e120dde, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 4518151388534660051, guid: bf7b7807db27045bd84a9afb8e120dde, type: 3}
       propertyPath: m_audioClip
@@ -15284,7 +15422,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3517413981310652797, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3517413981310652797, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: m_audioClip
@@ -15352,7 +15490,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8665392252620930762, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15483,7 +15621,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2026607439883925078, guid: 75d7544339ce046509e25375e80b7d94, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 2026607439883925078, guid: 75d7544339ce046509e25375e80b7d94, type: 3}
       propertyPath: m_PlayOnAwake
@@ -15683,6 +15821,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3455dff59a845461a854593eea9d5314, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isTitleGroup: 1
   gazeClips:
   - {fileID: 8300000, guid: e274ece2166774f6a9fe084a83c60745, type: 3}
   - {fileID: 8300000, guid: cc082707a842048998984d7ad257e55d, type: 3}
@@ -15757,7 +15896,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.7
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -15766,7 +15905,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 30
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -15801,7 +15940,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -15864,7 +16003,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -6141129144356265105, guid: 7eb5a682b0d6346fab9577e461ec74ad, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -6141129144356265105, guid: 7eb5a682b0d6346fab9577e461ec74ad, type: 3}
       propertyPath: m_PlayOnAwake
@@ -15962,7 +16101,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3517413981310652797, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3517413981310652797, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: m_audioClip
@@ -16030,7 +16169,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8665392252620930762, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16060,7 +16199,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6074960166519319286, guid: 1d88dab988c734948980f564eb4e24da, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 6074960166519319286, guid: 1d88dab988c734948980f564eb4e24da, type: 3}
       propertyPath: m_audioClip
@@ -16201,7 +16340,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1740442738622476791, guid: 0e2124be5d3194293aaf63839cb8985f, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 1740442738622476791, guid: 0e2124be5d3194293aaf63839cb8985f, type: 3}
       propertyPath: m_audioClip
@@ -16249,7 +16388,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9021909563357582446, guid: 0e2124be5d3194293aaf63839cb8985f, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 9021909563357582446, guid: 0e2124be5d3194293aaf63839cb8985f, type: 3}
       propertyPath: m_audioClip
@@ -16307,6 +16446,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3455dff59a845461a854593eea9d5314, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isTitleGroup: 1
   gazeClips:
   - {fileID: 8300000, guid: e274ece2166774f6a9fe084a83c60745, type: 3}
   - {fileID: 8300000, guid: cc082707a842048998984d7ad257e55d, type: 3}
@@ -16381,7 +16521,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.7
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -16390,7 +16530,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 30
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -16425,7 +16565,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -16507,7 +16647,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 30
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -16600,7 +16740,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2689875916185555104, guid: ba45c2500159344b69a9a84f8ae087ae, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -2689875916185555104, guid: ba45c2500159344b69a9a84f8ae087ae, type: 3}
       propertyPath: m_audioClip
@@ -16715,7 +16855,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 30
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -16808,7 +16948,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7613890470635774891, guid: f51d74872706c4d6bbcc64080a4aa22b, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -7613890470635774891, guid: f51d74872706c4d6bbcc64080a4aa22b, type: 3}
       propertyPath: m_PlayOnAwake
@@ -16899,6 +17039,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3455dff59a845461a854593eea9d5314, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isTitleGroup: 1
   gazeClips:
   - {fileID: 8300000, guid: e274ece2166774f6a9fe084a83c60745, type: 3}
   - {fileID: 8300000, guid: cc082707a842048998984d7ad257e55d, type: 3}
@@ -16995,7 +17136,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.7
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -17004,7 +17145,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 30
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -17039,7 +17180,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -17097,7 +17238,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2689875916185555104, guid: ba45c2500159344b69a9a84f8ae087ae, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -2689875916185555104, guid: ba45c2500159344b69a9a84f8ae087ae, type: 3}
       propertyPath: MinDistance
@@ -17194,7 +17335,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3517413981310652797, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3517413981310652797, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: m_audioClip
@@ -17266,7 +17407,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8665392252620930762, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17291,7 +17432,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6074960166519319286, guid: 1d88dab988c734948980f564eb4e24da, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 6074960166519319286, guid: 1d88dab988c734948980f564eb4e24da, type: 3}
       propertyPath: MinDistance
@@ -17401,7 +17542,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7704364939615562864, guid: d2c5b8354172141e2952571b5b0cc660, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -7704364939615562864, guid: d2c5b8354172141e2952571b5b0cc660, type: 3}
       propertyPath: m_PlayOnAwake
@@ -17503,7 +17644,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2026607439883925078, guid: 75d7544339ce046509e25375e80b7d94, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 2026607439883925078, guid: 75d7544339ce046509e25375e80b7d94, type: 3}
       propertyPath: m_PlayOnAwake
@@ -17592,7 +17733,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2689875916185555104, guid: ba45c2500159344b69a9a84f8ae087ae, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -2689875916185555104, guid: ba45c2500159344b69a9a84f8ae087ae, type: 3}
       propertyPath: m_audioClip
@@ -17694,7 +17835,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 668153383371603316, guid: efce717dc21374bde80b03ce419d7ab3, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 4812615095006539678, guid: efce717dc21374bde80b03ce419d7ab3, type: 3}
       propertyPath: vrCamera
@@ -17767,7 +17908,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3517413981310652797, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3517413981310652797, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: m_audioClip
@@ -17843,7 +17984,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8665392252620930762, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17882,7 +18023,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 30
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -17975,7 +18116,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2501512549809119662, guid: 6891ef9d0da3d4ca3b5ce93d9d7c0049, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 2501512549809119662, guid: 6891ef9d0da3d4ca3b5ce93d9d7c0049, type: 3}
       propertyPath: MinDistance
@@ -18043,7 +18184,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9035018370041710207, guid: 6891ef9d0da3d4ca3b5ce93d9d7c0049, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18136,7 +18277,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -5005998288018854177, guid: 90dba086dfb8f44ddbc339dedbbe4471, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -5005998288018854177, guid: 90dba086dfb8f44ddbc339dedbbe4471, type: 3}
       propertyPath: m_audioClip
@@ -18242,7 +18383,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3517413981310652797, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3517413981310652797, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: m_audioClip
@@ -18318,7 +18459,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8665392252620930762, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18357,7 +18498,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 30
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -18455,7 +18596,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2689875916185555104, guid: ba45c2500159344b69a9a84f8ae087ae, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -2689875916185555104, guid: ba45c2500159344b69a9a84f8ae087ae, type: 3}
       propertyPath: m_audioClip
@@ -18609,7 +18750,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8048131134147933829, guid: e0ba7126d542a46ab9a0f45f3b417a43, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18639,7 +18780,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3517413981310652797, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3517413981310652797, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: m_audioClip
@@ -18711,7 +18852,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8665392252620930762, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18741,7 +18882,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6074960166519319286, guid: 1d88dab988c734948980f564eb4e24da, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 6074960166519319286, guid: 1d88dab988c734948980f564eb4e24da, type: 3}
       propertyPath: m_audioClip
@@ -18851,7 +18992,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 30
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -18943,6 +19084,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3455dff59a845461a854593eea9d5314, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isTitleGroup: 1
   gazeClips:
   - {fileID: 8300000, guid: e274ece2166774f6a9fe084a83c60745, type: 3}
   - {fileID: 8300000, guid: cc082707a842048998984d7ad257e55d, type: 3}
@@ -19154,7 +19296,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4518151388534660051, guid: bf7b7807db27045bd84a9afb8e120dde, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 4518151388534660051, guid: bf7b7807db27045bd84a9afb8e120dde, type: 3}
       propertyPath: m_audioClip
@@ -19296,7 +19438,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7927355725670756746, guid: 5f067239ce50e41478a7138a991a3980, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19330,7 +19472,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2026607439883925078, guid: 75d7544339ce046509e25375e80b7d94, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 2026607439883925078, guid: 75d7544339ce046509e25375e80b7d94, type: 3}
       propertyPath: m_PlayOnAwake
@@ -19419,7 +19561,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3517413981310652797, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3517413981310652797, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: m_audioClip
@@ -19491,7 +19633,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8665392252620930762, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19594,7 +19736,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7131820991508389336, guid: c4336eb45c6a14855976f8462e240de4, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 7131820991508389336, guid: c4336eb45c6a14855976f8462e240de4, type: 3}
       propertyPath: m_audioClip
@@ -19610,7 +19752,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7354199900240201318, guid: c4336eb45c6a14855976f8462e240de4, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 7354199900240201318, guid: c4336eb45c6a14855976f8462e240de4, type: 3}
       propertyPath: m_audioClip
@@ -19654,7 +19796,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3517413981310652797, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3517413981310652797, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: m_audioClip
@@ -19726,7 +19868,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8665392252620930762, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19761,7 +19903,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -6141129144356265105, guid: 7eb5a682b0d6346fab9577e461ec74ad, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -6141129144356265105, guid: 7eb5a682b0d6346fab9577e461ec74ad, type: 3}
       propertyPath: m_PlayOnAwake
@@ -19853,7 +19995,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -5005998288018854177, guid: 90dba086dfb8f44ddbc339dedbbe4471, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -5005998288018854177, guid: 90dba086dfb8f44ddbc339dedbbe4471, type: 3}
       propertyPath: m_audioClip
@@ -19950,7 +20092,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3517413981310652797, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3517413981310652797, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: m_audioClip
@@ -20022,7 +20164,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8665392252620930762, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20052,7 +20194,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -5005998288018854177, guid: 90dba086dfb8f44ddbc339dedbbe4471, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -5005998288018854177, guid: 90dba086dfb8f44ddbc339dedbbe4471, type: 3}
       propertyPath: m_audioClip
@@ -20163,7 +20305,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6074960166519319286, guid: 1d88dab988c734948980f564eb4e24da, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 6074960166519319286, guid: 1d88dab988c734948980f564eb4e24da, type: 3}
       propertyPath: m_audioClip
@@ -20260,7 +20402,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -6141129144356265105, guid: 7eb5a682b0d6346fab9577e461ec74ad, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -6141129144356265105, guid: 7eb5a682b0d6346fab9577e461ec74ad, type: 3}
       propertyPath: m_PlayOnAwake
@@ -20483,7 +20625,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7613890470635774891, guid: f51d74872706c4d6bbcc64080a4aa22b, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -7613890470635774891, guid: f51d74872706c4d6bbcc64080a4aa22b, type: 3}
       propertyPath: m_PlayOnAwake
@@ -20581,7 +20723,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6074960166519319286, guid: 1d88dab988c734948980f564eb4e24da, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 6074960166519319286, guid: 1d88dab988c734948980f564eb4e24da, type: 3}
       propertyPath: m_audioClip
@@ -20912,7 +21054,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4518151388534660051, guid: bf7b7807db27045bd84a9afb8e120dde, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 4518151388534660051, guid: bf7b7807db27045bd84a9afb8e120dde, type: 3}
       propertyPath: m_audioClip
@@ -21006,7 +21148,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -5005998288018854177, guid: 90dba086dfb8f44ddbc339dedbbe4471, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -5005998288018854177, guid: 90dba086dfb8f44ddbc339dedbbe4471, type: 3}
       propertyPath: m_audioClip
@@ -21112,7 +21254,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -300958115139693548, guid: b94aab8ac29a345fc96f1f43249b4583, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 4046323339671317330, guid: b94aab8ac29a345fc96f1f43249b4583, type: 3}
       propertyPath: vrCamera
@@ -21302,7 +21444,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6074960166519319286, guid: 1d88dab988c734948980f564eb4e24da, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 6074960166519319286, guid: 1d88dab988c734948980f564eb4e24da, type: 3}
       propertyPath: m_audioClip
@@ -21408,7 +21550,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3517413981310652797, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3517413981310652797, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: m_audioClip
@@ -21476,7 +21618,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8665392252620930762, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21501,7 +21643,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6074960166519319286, guid: 1d88dab988c734948980f564eb4e24da, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 6074960166519319286, guid: 1d88dab988c734948980f564eb4e24da, type: 3}
       propertyPath: m_audioClip
@@ -21598,7 +21740,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3517413981310652797, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3517413981310652797, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: m_audioClip
@@ -21666,7 +21808,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8665392252620930762, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21782,7 +21924,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4627762474020843417, guid: 5b976d53c34904934a94411bd7b12cb7, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 4627762474020843417, guid: 5b976d53c34904934a94411bd7b12cb7, type: 3}
       propertyPath: m_audioClip
@@ -21814,7 +21956,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8371604017544220528, guid: 5b976d53c34904934a94411bd7b12cb7, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 8371604017544220528, guid: 5b976d53c34904934a94411bd7b12cb7, type: 3}
       propertyPath: m_audioClip
@@ -21919,7 +22061,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4518151388534660051, guid: bf7b7807db27045bd84a9afb8e120dde, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 4518151388534660051, guid: bf7b7807db27045bd84a9afb8e120dde, type: 3}
       propertyPath: m_audioClip
@@ -22077,7 +22219,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 30
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -22170,7 +22312,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -300958115139693548, guid: b94aab8ac29a345fc96f1f43249b4583, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 4046323339671317330, guid: b94aab8ac29a345fc96f1f43249b4583, type: 3}
       propertyPath: vrCamera
@@ -22264,7 +22406,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 668153383371603316, guid: efce717dc21374bde80b03ce419d7ab3, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 668153383371603316, guid: efce717dc21374bde80b03ce419d7ab3, type: 3}
       propertyPath: MinDistance
@@ -22350,7 +22492,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 30
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -22462,7 +22604,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 30
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -22555,7 +22697,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6074960166519319286, guid: 1d88dab988c734948980f564eb4e24da, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 6074960166519319286, guid: 1d88dab988c734948980f564eb4e24da, type: 3}
       propertyPath: m_audioClip
@@ -22652,7 +22794,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3517413981310652797, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3517413981310652797, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: m_audioClip
@@ -22720,7 +22862,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8665392252620930762, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -22750,7 +22892,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.7
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -22759,7 +22901,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 30
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -22794,7 +22936,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -22862,7 +23004,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -300958115139693548, guid: b94aab8ac29a345fc96f1f43249b4583, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 4046323339671317330, guid: b94aab8ac29a345fc96f1f43249b4583, type: 3}
       propertyPath: vrCamera
@@ -22951,7 +23093,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -6141129144356265105, guid: 7eb5a682b0d6346fab9577e461ec74ad, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -6141129144356265105, guid: 7eb5a682b0d6346fab9577e461ec74ad, type: 3}
       propertyPath: m_PlayOnAwake
@@ -23045,7 +23187,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2689875916185555104, guid: ba45c2500159344b69a9a84f8ae087ae, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -2689875916185555104, guid: ba45c2500159344b69a9a84f8ae087ae, type: 3}
       propertyPath: m_audioClip
@@ -23151,7 +23293,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 30
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -23340,7 +23482,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2689875916185555104, guid: ba45c2500159344b69a9a84f8ae087ae, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -2689875916185555104, guid: ba45c2500159344b69a9a84f8ae087ae, type: 3}
       propertyPath: m_audioClip
@@ -23511,7 +23653,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7927355725670756746, guid: 5f067239ce50e41478a7138a991a3980, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -23541,7 +23683,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -5005998288018854177, guid: 90dba086dfb8f44ddbc339dedbbe4471, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -5005998288018854177, guid: 90dba086dfb8f44ddbc339dedbbe4471, type: 3}
       propertyPath: m_audioClip
@@ -23634,7 +23776,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -5005998288018854177, guid: 90dba086dfb8f44ddbc339dedbbe4471, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -5005998288018854177, guid: 90dba086dfb8f44ddbc339dedbbe4471, type: 3}
       propertyPath: m_audioClip
@@ -23732,6 +23874,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3455dff59a845461a854593eea9d5314, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isTitleGroup: 1
   gazeClips:
   - {fileID: 8300000, guid: e274ece2166774f6a9fe084a83c60745, type: 3}
   - {fileID: 8300000, guid: cc082707a842048998984d7ad257e55d, type: 3}
@@ -23828,7 +23971,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.7
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -23837,7 +23980,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 30
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -23872,7 +24015,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -23930,7 +24073,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -300958115139693548, guid: b94aab8ac29a345fc96f1f43249b4583, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 4046323339671317330, guid: b94aab8ac29a345fc96f1f43249b4583, type: 3}
       propertyPath: vrCamera
@@ -24024,7 +24167,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7613890470635774891, guid: f51d74872706c4d6bbcc64080a4aa22b, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -7613890470635774891, guid: f51d74872706c4d6bbcc64080a4aa22b, type: 3}
       propertyPath: m_PlayOnAwake
@@ -24165,7 +24308,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8048131134147933829, guid: e0ba7126d542a46ab9a0f45f3b417a43, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -24195,7 +24338,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2689875916185555104, guid: ba45c2500159344b69a9a84f8ae087ae, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -2689875916185555104, guid: ba45c2500159344b69a9a84f8ae087ae, type: 3}
       propertyPath: m_audioClip
@@ -24314,7 +24457,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4518151388534660051, guid: bf7b7807db27045bd84a9afb8e120dde, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 4518151388534660051, guid: bf7b7807db27045bd84a9afb8e120dde, type: 3}
       propertyPath: m_audioClip
@@ -24412,7 +24555,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 30
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -24513,7 +24656,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4518151388534660051, guid: bf7b7807db27045bd84a9afb8e120dde, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 4518151388534660051, guid: bf7b7807db27045bd84a9afb8e120dde, type: 3}
       propertyPath: m_audioClip
@@ -24603,7 +24746,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6074960166519319286, guid: 1d88dab988c734948980f564eb4e24da, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 6074960166519319286, guid: 1d88dab988c734948980f564eb4e24da, type: 3}
       propertyPath: m_audioClip
@@ -24709,7 +24852,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2689875916185555104, guid: ba45c2500159344b69a9a84f8ae087ae, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -2689875916185555104, guid: ba45c2500159344b69a9a84f8ae087ae, type: 3}
       propertyPath: m_audioClip
@@ -24859,7 +25002,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6074960166519319286, guid: 1d88dab988c734948980f564eb4e24da, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 6074960166519319286, guid: 1d88dab988c734948980f564eb4e24da, type: 3}
       propertyPath: m_audioClip
@@ -24980,7 +25123,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6074960166519319286, guid: 1d88dab988c734948980f564eb4e24da, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 6074960166519319286, guid: 1d88dab988c734948980f564eb4e24da, type: 3}
       propertyPath: m_audioClip
@@ -25080,6 +25223,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3455dff59a845461a854593eea9d5314, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isTitleGroup: 1
   gazeClips:
   - {fileID: 8300000, guid: e274ece2166774f6a9fe084a83c60745, type: 3}
   - {fileID: 8300000, guid: cc082707a842048998984d7ad257e55d, type: 3}
@@ -25181,7 +25325,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.7
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -25190,7 +25334,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 30
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -25225,7 +25369,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -25288,7 +25432,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3517413981310652797, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3517413981310652797, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: m_audioClip
@@ -25356,7 +25500,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8665392252620930762, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -25409,7 +25553,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4518151388534660051, guid: bf7b7807db27045bd84a9afb8e120dde, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 4518151388534660051, guid: bf7b7807db27045bd84a9afb8e120dde, type: 3}
       propertyPath: MinDistance
@@ -25576,7 +25720,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8048131134147933829, guid: e0ba7126d542a46ab9a0f45f3b417a43, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -25615,7 +25759,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 30
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -25781,7 +25925,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 30
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -25915,7 +26059,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -6141129144356265105, guid: 7eb5a682b0d6346fab9577e461ec74ad, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -6141129144356265105, guid: 7eb5a682b0d6346fab9577e461ec74ad, type: 3}
       propertyPath: m_PlayOnAwake
@@ -26218,7 +26362,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7637200820476230091, guid: 930046cc974074a1eaeac7f987a17a32, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 8245749495460947089, guid: 930046cc974074a1eaeac7f987a17a32, type: 3}
       propertyPath: m_Name
@@ -26303,7 +26447,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3517413981310652797, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3517413981310652797, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: m_audioClip
@@ -26375,7 +26519,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8665392252620930762, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -26415,7 +26559,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2689875916185555104, guid: ba45c2500159344b69a9a84f8ae087ae, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -2689875916185555104, guid: ba45c2500159344b69a9a84f8ae087ae, type: 3}
       propertyPath: m_audioClip
@@ -26508,7 +26652,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6074960166519319286, guid: 1d88dab988c734948980f564eb4e24da, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 6074960166519319286, guid: 1d88dab988c734948980f564eb4e24da, type: 3}
       propertyPath: m_audioClip
@@ -26614,7 +26758,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -5005998288018854177, guid: 90dba086dfb8f44ddbc339dedbbe4471, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -5005998288018854177, guid: 90dba086dfb8f44ddbc339dedbbe4471, type: 3}
       propertyPath: m_audioClip
@@ -26811,7 +26955,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7141208361039808567, guid: f5a2952a7e3b64258985533f92dbdaf8, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -7141208361039808567, guid: f5a2952a7e3b64258985533f92dbdaf8, type: 3}
       propertyPath: m_PlayOnAwake
@@ -26909,7 +27053,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -6141129144356265105, guid: 7eb5a682b0d6346fab9577e461ec74ad, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -6141129144356265105, guid: 7eb5a682b0d6346fab9577e461ec74ad, type: 3}
       propertyPath: m_PlayOnAwake
@@ -27020,7 +27164,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2689875916185555104, guid: ba45c2500159344b69a9a84f8ae087ae, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -2689875916185555104, guid: ba45c2500159344b69a9a84f8ae087ae, type: 3}
       propertyPath: m_audioClip
@@ -27126,7 +27270,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -6141129144356265105, guid: 7eb5a682b0d6346fab9577e461ec74ad, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -6141129144356265105, guid: 7eb5a682b0d6346fab9577e461ec74ad, type: 3}
       propertyPath: m_PlayOnAwake
@@ -27212,7 +27356,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2689875916185555104, guid: ba45c2500159344b69a9a84f8ae087ae, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -2689875916185555104, guid: ba45c2500159344b69a9a84f8ae087ae, type: 3}
       propertyPath: m_audioClip
@@ -27309,7 +27453,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -5005998288018854177, guid: 90dba086dfb8f44ddbc339dedbbe4471, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -5005998288018854177, guid: 90dba086dfb8f44ddbc339dedbbe4471, type: 3}
       propertyPath: m_audioClip
@@ -27424,7 +27568,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 30
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -27517,7 +27661,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3517413981310652797, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3517413981310652797, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: m_audioClip
@@ -27585,7 +27729,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8665392252620930762, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -27674,7 +27818,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3517413981310652797, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3517413981310652797, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: m_audioClip
@@ -27750,7 +27894,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8665392252620930762, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -27790,7 +27934,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -6141129144356265105, guid: 7eb5a682b0d6346fab9577e461ec74ad, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -6141129144356265105, guid: 7eb5a682b0d6346fab9577e461ec74ad, type: 3}
       propertyPath: m_PlayOnAwake
@@ -27907,7 +28051,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2026607439883925078, guid: 75d7544339ce046509e25375e80b7d94, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 2026607439883925078, guid: 75d7544339ce046509e25375e80b7d94, type: 3}
       propertyPath: m_PlayOnAwake
@@ -28001,7 +28145,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6074960166519319286, guid: 1d88dab988c734948980f564eb4e24da, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 6074960166519319286, guid: 1d88dab988c734948980f564eb4e24da, type: 3}
       propertyPath: m_audioClip
@@ -28189,7 +28333,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6074960166519319286, guid: 1d88dab988c734948980f564eb4e24da, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 6074960166519319286, guid: 1d88dab988c734948980f564eb4e24da, type: 3}
       propertyPath: m_audioClip
@@ -28295,7 +28439,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3517413981310652797, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3517413981310652797, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: m_audioClip
@@ -28363,7 +28507,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8665392252620930762, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -28398,7 +28542,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3517413981310652797, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3517413981310652797, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: m_audioClip
@@ -28466,7 +28610,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8665392252620930762, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -28496,7 +28640,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2689875916185555104, guid: ba45c2500159344b69a9a84f8ae087ae, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -2689875916185555104, guid: ba45c2500159344b69a9a84f8ae087ae, type: 3}
       propertyPath: m_audioClip
@@ -28688,6 +28832,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3455dff59a845461a854593eea9d5314, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isTitleGroup: 1
   gazeClips:
   - {fileID: 8300000, guid: e274ece2166774f6a9fe084a83c60745, type: 3}
   - {fileID: 8300000, guid: cc082707a842048998984d7ad257e55d, type: 3}
@@ -28784,7 +28929,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.7
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -28793,7 +28938,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 30
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -28828,7 +28973,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -28959,7 +29104,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 30
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -29153,7 +29298,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 30
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -29246,7 +29391,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6074960166519319286, guid: 1d88dab988c734948980f564eb4e24da, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 6074960166519319286, guid: 1d88dab988c734948980f564eb4e24da, type: 3}
       propertyPath: MinDistance
@@ -29347,7 +29492,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 668153383371603316, guid: efce717dc21374bde80b03ce419d7ab3, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 4812615095006539678, guid: efce717dc21374bde80b03ce419d7ab3, type: 3}
       propertyPath: vrCamera
@@ -29426,6 +29571,104 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetSkyColor: {r: 0, g: 0.43849897, b: 1, a: 1}
   colorFadeDuration: 2
+  completionClip: {fileID: 8300000, guid: a93601de28a48447cbe99fda3ac26775, type: 3}
+--- !u!82 &2118552003
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1251056575}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!4 &2124822460 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5959873683253813134, guid: 18f15088ffdde4ac183dca9ed593de0e, type: 3}
@@ -29454,7 +29697,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -6141129144356265105, guid: 7eb5a682b0d6346fab9577e461ec74ad, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -6141129144356265105, guid: 7eb5a682b0d6346fab9577e461ec74ad, type: 3}
       propertyPath: MinDistance
@@ -29566,7 +29809,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2686692540460320312, guid: 2c1edde6b4ed04667b6228b2408a7761, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -2686692540460320312, guid: 2c1edde6b4ed04667b6228b2408a7761, type: 3}
       propertyPath: m_audioClip
@@ -29671,7 +29914,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1621201504721165977, guid: 66e0459614a724848ad238c1efa1c683, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 1621201504721165977, guid: 66e0459614a724848ad238c1efa1c683, type: 3}
       propertyPath: m_audioClip
@@ -29735,7 +29978,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3844875378723602589, guid: 66e0459614a724848ad238c1efa1c683, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3844875378723602589, guid: 66e0459614a724848ad238c1efa1c683, type: 3}
       propertyPath: m_audioClip
@@ -29787,7 +30030,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 410992158580471130, guid: d20914d8d28b143e0af28e00fb3188ba, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 410992158580471130, guid: d20914d8d28b143e0af28e00fb3188ba, type: 3}
       propertyPath: m_audioClip
@@ -29811,7 +30054,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 844165710604002046, guid: d20914d8d28b143e0af28e00fb3188ba, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 844165710604002046, guid: d20914d8d28b143e0af28e00fb3188ba, type: 3}
       propertyPath: m_audioClip
@@ -29919,7 +30162,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2978557292799810602, guid: d5ee5acfb2e2e403f93cbc6e3c07617d, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 2978557292799810602, guid: d5ee5acfb2e2e403f93cbc6e3c07617d, type: 3}
       propertyPath: m_audioClip
@@ -29947,7 +30190,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5563026566411577003, guid: d5ee5acfb2e2e403f93cbc6e3c07617d, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 5563026566411577003, guid: d5ee5acfb2e2e403f93cbc6e3c07617d, type: 3}
       propertyPath: m_audioClip
@@ -30047,7 +30290,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6612713912070201042, guid: 0a8387f2144fb45e4a7e2998f2f00a2d, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 7315664434809004976, guid: 0a8387f2144fb45e4a7e2998f2f00a2d, type: 3}
       propertyPath: m_LocalScale.x
@@ -30184,7 +30427,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7131820991508389336, guid: c4336eb45c6a14855976f8462e240de4, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 7131820991508389336, guid: c4336eb45c6a14855976f8462e240de4, type: 3}
       propertyPath: m_audioClip
@@ -30200,7 +30443,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7354199900240201318, guid: c4336eb45c6a14855976f8462e240de4, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 7354199900240201318, guid: c4336eb45c6a14855976f8462e240de4, type: 3}
       propertyPath: m_audioClip
@@ -30244,7 +30487,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4627762474020843417, guid: 5b976d53c34904934a94411bd7b12cb7, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 4627762474020843417, guid: 5b976d53c34904934a94411bd7b12cb7, type: 3}
       propertyPath: m_audioClip
@@ -30276,7 +30519,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8371604017544220528, guid: 5b976d53c34904934a94411bd7b12cb7, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 8371604017544220528, guid: 5b976d53c34904934a94411bd7b12cb7, type: 3}
       propertyPath: m_audioClip
@@ -30352,7 +30595,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1712450652661899032, guid: b53897e6a17ef4395aadff988a35eb83, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 1712450652661899032, guid: b53897e6a17ef4395aadff988a35eb83, type: 3}
       propertyPath: m_audioClip
@@ -30432,7 +30675,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8414617527026239908, guid: b53897e6a17ef4395aadff988a35eb83, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 8414617527026239908, guid: b53897e6a17ef4395aadff988a35eb83, type: 3}
       propertyPath: m_audioClip
@@ -30472,7 +30715,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1125203321777493390, guid: e9ca2c849d4094ba5b0cc7e8a455e5a7, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 1125203321777493390, guid: e9ca2c849d4094ba5b0cc7e8a455e5a7, type: 3}
+      propertyPath: m_audioClip
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6052674062752484093, guid: e9ca2c849d4094ba5b0cc7e8a455e5a7, type: 3}
       propertyPath: m_LocalScale.x
@@ -30561,7 +30808,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 668153383371603316, guid: efce717dc21374bde80b03ce419d7ab3, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 4812615095006539678, guid: efce717dc21374bde80b03ce419d7ab3, type: 3}
       propertyPath: vrCamera
@@ -30706,7 +30953,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5285306015630852816, guid: 2e2da75346f7c4e15b130c081a7b0f9b, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 5285306015630852816, guid: 2e2da75346f7c4e15b130c081a7b0f9b, type: 3}
       propertyPath: m_audioClip
@@ -30730,7 +30977,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9067572275201942746, guid: 2e2da75346f7c4e15b130c081a7b0f9b, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 9067572275201942746, guid: 2e2da75346f7c4e15b130c081a7b0f9b, type: 3}
       propertyPath: m_audioClip
@@ -30774,7 +31021,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5601994944631585659, guid: 3286a8141c41c4d49bc24ae879504757, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 5601994944631585659, guid: 3286a8141c41c4d49bc24ae879504757, type: 3}
+      propertyPath: m_audioClip
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7936132771308555550, guid: 3286a8141c41c4d49bc24ae879504757, type: 3}
       propertyPath: vrCamera
@@ -30923,7 +31174,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2973933267607311384, guid: 90a4b2ef971e34992ac1447bb2d9b57b, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 7432238145095915103, guid: 90a4b2ef971e34992ac1447bb2d9b57b, type: 3}
       propertyPath: vrCamera
@@ -30952,7 +31203,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1507336436989996735, guid: d088b49fb372244849a1a204fbb559f3, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 1507336436989996735, guid: d088b49fb372244849a1a204fbb559f3, type: 3}
       propertyPath: m_audioClip
@@ -31032,7 +31283,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8634932152533021188, guid: d088b49fb372244849a1a204fbb559f3, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 8634932152533021188, guid: d088b49fb372244849a1a204fbb559f3, type: 3}
       propertyPath: m_audioClip
@@ -31072,7 +31323,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1248361108093010928, guid: 41a79170e21a24d9cb832ee2ce7b760c, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 1248361108093010928, guid: 41a79170e21a24d9cb832ee2ce7b760c, type: 3}
       propertyPath: m_audioClip
@@ -31144,7 +31395,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6789295860969321342, guid: 41a79170e21a24d9cb832ee2ce7b760c, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 6789295860969321342, guid: 41a79170e21a24d9cb832ee2ce7b760c, type: 3}
       propertyPath: m_audioClip
@@ -31240,7 +31491,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5586704741987298953, guid: 20d1feb2d73b54f21962953fae0b08b2, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 5586704741987298953, guid: 20d1feb2d73b54f21962953fae0b08b2, type: 3}
       propertyPath: m_audioClip
@@ -31268,7 +31519,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8862208758564439068, guid: 20d1feb2d73b54f21962953fae0b08b2, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 8862208758564439068, guid: 20d1feb2d73b54f21962953fae0b08b2, type: 3}
       propertyPath: m_audioClip
@@ -31356,7 +31607,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8048131134147933829, guid: e0ba7126d542a46ab9a0f45f3b417a43, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -31437,7 +31688,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1730859431283468939, guid: 70a8fcfbde5a843bdb7fc77221514e09, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 1730859431283468939, guid: 70a8fcfbde5a843bdb7fc77221514e09, type: 3}
+      propertyPath: m_audioClip
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1911353964177822380, guid: 70a8fcfbde5a843bdb7fc77221514e09, type: 3}
       propertyPath: m_Name
@@ -31526,7 +31781,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4848749178072600679, guid: 15567a2026dc34738ad9ebad12b370c7, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 4848749178072600679, guid: 15567a2026dc34738ad9ebad12b370c7, type: 3}
       propertyPath: m_audioClip
@@ -31550,7 +31805,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6601262705801453712, guid: 15567a2026dc34738ad9ebad12b370c7, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 6601262705801453712, guid: 15567a2026dc34738ad9ebad12b370c7, type: 3}
       propertyPath: m_audioClip
@@ -31594,7 +31849,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2689875916185555104, guid: ba45c2500159344b69a9a84f8ae087ae, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -2689875916185555104, guid: ba45c2500159344b69a9a84f8ae087ae, type: 3}
       propertyPath: m_audioClip
@@ -31691,7 +31946,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6412112750393437139, guid: 5d6034b0e0d6e4fd0bdf141cf29b362c, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 6412112750393437139, guid: 5d6034b0e0d6e4fd0bdf141cf29b362c, type: 3}
       propertyPath: m_audioClip
@@ -31778,7 +32033,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6074960166519319286, guid: 1d88dab988c734948980f564eb4e24da, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 6074960166519319286, guid: 1d88dab988c734948980f564eb4e24da, type: 3}
       propertyPath: m_audioClip
@@ -31871,7 +32126,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 214160510294087946, guid: 9d0d6107f90b14d3690f1f7f1b9dd8b6, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 1250771794673823948, guid: 9d0d6107f90b14d3690f1f7f1b9dd8b6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -31948,7 +32203,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7637200820476230091, guid: 930046cc974074a1eaeac7f987a17a32, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 8245749495460947089, guid: 930046cc974074a1eaeac7f987a17a32, type: 3}
       propertyPath: m_Name
@@ -32077,7 +32332,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3541291724147948995, guid: 2c1ea17f8265b48a289f634e170129a1, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3541291724147948995, guid: 2c1ea17f8265b48a289f634e170129a1, type: 3}
       propertyPath: m_audioClip
@@ -32181,7 +32436,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8690542841492467989, guid: 4c7956f3ed1fb410f96283e8c54964e9, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 8690542841492467989, guid: 4c7956f3ed1fb410f96283e8c54964e9, type: 3}
+      propertyPath: m_audioClip
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -32266,7 +32525,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4613551519469218045, guid: d7962b76bd24645839549a4ab7d85813, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 8435112247252151673, guid: d7962b76bd24645839549a4ab7d85813, type: 3}
       propertyPath: vrCamera
@@ -32303,7 +32562,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4518151388534660051, guid: bf7b7807db27045bd84a9afb8e120dde, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 4518151388534660051, guid: bf7b7807db27045bd84a9afb8e120dde, type: 3}
       propertyPath: m_audioClip
@@ -32380,7 +32639,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -5005998288018854177, guid: 90dba086dfb8f44ddbc339dedbbe4471, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -5005998288018854177, guid: 90dba086dfb8f44ddbc339dedbbe4471, type: 3}
       propertyPath: m_audioClip
@@ -32505,7 +32764,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1740442738622476791, guid: 0e2124be5d3194293aaf63839cb8985f, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 1740442738622476791, guid: 0e2124be5d3194293aaf63839cb8985f, type: 3}
       propertyPath: m_audioClip
@@ -32541,7 +32800,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9021909563357582446, guid: 0e2124be5d3194293aaf63839cb8985f, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 9021909563357582446, guid: 0e2124be5d3194293aaf63839cb8985f, type: 3}
       propertyPath: m_audioClip
@@ -32637,7 +32896,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6096236386955357642, guid: 8cd8312809bf74d03b0c735522e1f336, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 6096236386955357642, guid: 8cd8312809bf74d03b0c735522e1f336, type: 3}
       propertyPath: m_audioClip
@@ -32665,7 +32924,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8965557298339842702, guid: 8cd8312809bf74d03b0c735522e1f336, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 8965557298339842702, guid: 8cd8312809bf74d03b0c735522e1f336, type: 3}
       propertyPath: m_audioClip
@@ -32705,7 +32964,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 636343669663141372, guid: 33d08525bc3834e3ebf5d715bfdb5c5f, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 636343669663141372, guid: 33d08525bc3834e3ebf5d715bfdb5c5f, type: 3}
       propertyPath: m_audioClip
@@ -32733,7 +32992,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1150288561859911147, guid: 33d08525bc3834e3ebf5d715bfdb5c5f, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 1150288561859911147, guid: 33d08525bc3834e3ebf5d715bfdb5c5f, type: 3}
       propertyPath: m_audioClip
@@ -32825,7 +33084,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 148909843419193095, guid: 808e7151cd7dd4c45a7cf3b35176b363, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 148909843419193095, guid: 808e7151cd7dd4c45a7cf3b35176b363, type: 3}
       propertyPath: m_audioClip
@@ -32905,7 +33164,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8469273510618488478, guid: 808e7151cd7dd4c45a7cf3b35176b363, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 8469273510618488478, guid: 808e7151cd7dd4c45a7cf3b35176b363, type: 3}
       propertyPath: m_audioClip
@@ -33005,7 +33264,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2543621339371577247, guid: e01091f6f32114660b7905f78cfca656, type: 3}
       propertyPath: MaxDistance
-      value: 20
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 2543621339371577247, guid: e01091f6f32114660b7905f78cfca656, type: 3}
+      propertyPath: m_audioClip
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7485361072722511672, guid: e01091f6f32114660b7905f78cfca656, type: 3}
       propertyPath: vrCamera
@@ -33110,3 +33373,4 @@ SceneRoots:
   - {fileID: 1512872819}
   - {fileID: 461173158}
   - {fileID: 940923932}
+  - {fileID: 521138858}

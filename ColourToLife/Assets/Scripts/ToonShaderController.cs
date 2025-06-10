@@ -152,11 +152,11 @@ public class ShaderGraphToonController : MonoBehaviour
 
         audioSource.playOnAwake = false;
         audioSource.loop = false;                  // ❌ Don't loop
-        audioSource.spatialBlend = 1f;             // ✅ Fully 3D
+        audioSource.spatialBlend = isTitleGroup ? 0f : 1f;
         audioSource.rolloffMode = AudioRolloffMode.Logarithmic; // Optional: realistic fade
         audioSource.minDistance = 1f;              // Distance before volume starts to drop
-        audioSource.maxDistance = 20f;             // Max audible distance
-        audioSource.volume = 1f;                   // Full volume (adjust as needed)
+        audioSource.maxDistance = 30f;             // Max audible distance
+        audioSource.volume = isTitleGroup ? 0.7f : 1f; // Or adjust as needed
 
 
         // 🔥 Auto-load gaze clips from Resources folder
@@ -178,6 +178,8 @@ public class ShaderGraphToonController : MonoBehaviour
     {
         if (!Application.isPlaying) return;
 
+
+
         // --- Gaze Detection ---
         if (vrCamera != null)
         {
@@ -186,8 +188,13 @@ public class ShaderGraphToonController : MonoBehaviour
             {
                 if (!isGazing)
                 {
+                    // Block non-title objects until title group is done
+                    if (!isTitleGroup && !ShaderGraphToonController.AreAllTitleObjectsGazed())
+                        return;
+
                     isGazing = true;
                     SetOutlineVisibility(true);
+
                     if (gazeClips.Length > 0)
                     {
                         int i = Random.Range(0, gazeClips.Length);
@@ -197,15 +204,19 @@ public class ShaderGraphToonController : MonoBehaviour
                             StopCoroutine(audioTransitionCoroutine);
 
                         audioTransitionCoroutine = StartCoroutine(SmoothAudioTransition(clip));
-
                     }
-
 
                     if (!hasStartedTransition)
                     {
                         hasStartedTransition = true;
                         ResetTransition();
                     }
+                }
+
+                // Block non-title objects until title group is done
+                if (!isTitleGroup && !ShaderGraphToonController.AreAllTitleObjectsGazed())
+                {
+                    return; // Skip gaze reaction
                 }
 
                 // 🔁 Track first-time gaze

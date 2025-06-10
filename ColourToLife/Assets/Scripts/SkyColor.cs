@@ -5,6 +5,9 @@ public class ContinuousSkyColorChanger : MonoBehaviour
     public Color targetSkyColor = Color.blue;     // Final sky color after all objects are gazed
     public float colorFadeDuration = 2f;         // Time to fade from black to red
 
+    public AudioClip completionClip; // 🔊 Assign in Inspector
+    private AudioSource audioSource;
+
     private bool transitionStarted = false;
     private bool transitionComplete = false;
     private float fadeTimer = 0f;
@@ -12,6 +15,11 @@ public class ContinuousSkyColorChanger : MonoBehaviour
     void Start()
     {
         Camera.main.backgroundColor = Color.black;
+
+        // Ensure AudioSource exists
+        audioSource = GetComponent<AudioSource>();
+        audioSource.playOnAwake = false;
+        audioSource.spatialBlend = 0f; // 2D sound (non-directional)
     }
 
     void Update()
@@ -20,7 +28,11 @@ public class ContinuousSkyColorChanger : MonoBehaviour
         {
             transitionStarted = true;
             fadeTimer = 0f;
-            Debug.Log("🌇 All objects gazed — starting sky transition from black to red.");
+            Debug.Log("🌇 All objects gazed — starting sky transition from black to blue.");
+
+            // 🔊 Play the sound once
+            if (completionClip != null)
+                audioSource.PlayOneShot(completionClip);
         }
 
         if (transitionStarted && !transitionComplete)

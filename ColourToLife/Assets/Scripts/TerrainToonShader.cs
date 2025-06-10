@@ -6,12 +6,12 @@ public class TerrainToonController : MonoBehaviour
 {
     private Terrain terrain;
 
-    
+
 
     private bool firstFadeDone = false;
-    
 
-    
+
+
     private MaterialPropertyBlock block;
 
     [Header("Color Palette")]
@@ -37,8 +37,8 @@ public class TerrainToonController : MonoBehaviour
     [SerializeField] private Vector2 minMax = new Vector2(0.1f, 0.9f);
 
     [SerializeField] private float shadeFadeDuration = 5f;
-[SerializeField] private float initialShades = 1f;
-[SerializeField] private float targetShades = 0.1f;
+    [SerializeField] private float initialShades = 1f;
+    [SerializeField] private float targetShades = 0.1f;
 
     private float shadeFadeTimer = 0f;
 
@@ -76,11 +76,15 @@ public class TerrainToonController : MonoBehaviour
         ApplyPropertyBlock();
     }
 
-    
+
 
     private void Update()
     {
         if (!Application.isPlaying || gazeTarget == null || terrain == null)
+            return;
+
+        // ⛔ Block terrain reaction until all title objects are gazed
+        if (!ShaderGraphToonController.AreAllTitleObjectsGazed())
             return;
 
         if (IsTerrainFirstHit())
@@ -99,6 +103,7 @@ public class TerrainToonController : MonoBehaviour
                 isFading = false;
         }
     }
+
 
     private void StartNextFade()
     {
@@ -156,7 +161,7 @@ public class TerrainToonController : MonoBehaviour
             Gizmos.color = hit.collider.gameObject == terrain.gameObject ? Color.green : Color.red;
             Gizmos.DrawSphere(hit.point, 0.2f);
         }
-        
+
     }
 #endif
 }
