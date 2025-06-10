@@ -5,7 +5,7 @@ Below you can learn more about the project. For any questions please reach out t
 - Antonin Ricou, antonin.ricou@etu.hesge.ch
 
 ## Presentation
-![View PDF](presskit/head-md1-possible-bodies-ColourToLife-AntoninPeter.pdf)
+![View PDF](head-md1-possible-bodies-ColourToLife-AntoninPeter.pdf)
 
 ## Video 
 [Watch Walkthrough](https://youtu.be/_VJHk2bAKb8)
