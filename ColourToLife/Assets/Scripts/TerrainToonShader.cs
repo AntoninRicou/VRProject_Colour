@@ -5,6 +5,13 @@ using UnityEngine;
 public class TerrainToonController : MonoBehaviour
 {
     private Terrain terrain;
+
+    
+
+    private bool firstFadeDone = false;
+    
+
+    
     private MaterialPropertyBlock block;
 
     [Header("Color Palette")]
@@ -28,6 +35,14 @@ public class TerrainToonController : MonoBehaviour
 
     [Header("Visual Settings")]
     [SerializeField] private Vector2 minMax = new Vector2(0.1f, 0.9f);
+
+    [SerializeField] private float shadeFadeDuration = 5f;
+[SerializeField] private float initialShades = 1f;
+[SerializeField] private float targetShades = 0.1f;
+
+    private float shadeFadeTimer = 0f;
+
+
 
     [Tooltip("Duration in seconds for the color to fully fade from one to another")]
     [SerializeField] private float colorFadeDuration = 10f;
@@ -60,6 +75,8 @@ public class TerrainToonController : MonoBehaviour
 
         ApplyPropertyBlock();
     }
+
+    
 
     private void Update()
     {
@@ -139,6 +156,7 @@ public class TerrainToonController : MonoBehaviour
             Gizmos.color = hit.collider.gameObject == terrain.gameObject ? Color.green : Color.red;
             Gizmos.DrawSphere(hit.point, 0.2f);
         }
+        
     }
 #endif
 }
