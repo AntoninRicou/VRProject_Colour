@@ -11,7 +11,7 @@ public class ShaderGraphToonController : MonoBehaviour
     public bool isCloudToTriggerSky = false; // set this in the Inspector on the object that should trigger the sky
     public static bool cloudTriggeredSky = false; // this is checked by the sky controller
 
-    public static bool isDevMode = true; // Set this globally in the scene
+    public static bool isDevMode = false; // Set this globally in the scene
     // Title tracking
     [Header("Title")]
     public bool isTitleGroup = false;
