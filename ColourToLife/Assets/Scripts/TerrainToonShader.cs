@@ -4,6 +4,8 @@ using UnityEngine;
 [RequireComponent(typeof(Terrain))]
 public class TerrainToonController : MonoBehaviour
 {
+
+    
     private Terrain terrain;
 
 
@@ -74,6 +76,21 @@ public class TerrainToonController : MonoBehaviour
         isFading = false;
 
         ApplyPropertyBlock();
+
+        if (ShaderGraphToonController.isDevMode)
+        {
+            if (block == null)
+                block = new MaterialPropertyBlock();
+
+            currentPaletteIndex = Random.Range(0, colorPalette.Length);
+            currentColor = colorPalette[currentPaletteIndex];
+            previousColor = currentColor;
+            targetColor = currentColor;
+
+            currentShades = initialShades;
+
+            ApplyPropertyBlock();
+        }
     }
 
 
@@ -87,7 +104,7 @@ public class TerrainToonController : MonoBehaviour
         if (!ShaderGraphToonController.AreAllTitleObjectsGazed())
             return;
 
-        if (IsTerrainFirstHit())
+        if (ShaderGraphToonController.isDevMode || IsTerrainFirstHit())
         {
             if (!isFading)
                 StartNextFade();

@@ -24,7 +24,10 @@ public class ContinuousSkyColorChanger : MonoBehaviour
 
     void Update()
     {
-        if (!transitionStarted && ShaderGraphToonController.AllObjectsGazedAtLeastOnce())
+        if (!transitionStarted && (
+        ShaderGraphToonController.AllObjectsGazedAtLeastOnce() ||
+        (ShaderGraphToonController.isDevMode && ShaderGraphToonController.cloudTriggeredSky)))
+
         {
             transitionStarted = true;
             fadeTimer = 0f;
@@ -33,6 +36,8 @@ public class ContinuousSkyColorChanger : MonoBehaviour
             // 🔊 Play the sound once
             if (completionClip != null)
                 audioSource.PlayOneShot(completionClip);
+            Debug.Log("☁️ Sky script detected cloud trigger!");
+
         }
 
         if (transitionStarted && !transitionComplete)

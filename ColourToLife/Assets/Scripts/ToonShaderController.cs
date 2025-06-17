@@ -6,8 +6,14 @@ using System.Collections; // ✅ Needed for IEnumerator
 [RequireComponent(typeof(MeshCollider))]
 public class ShaderGraphToonController : MonoBehaviour
 {
+
+    [Header("Sky Trigger")]
+    public bool isCloudToTriggerSky = false; // set this in the Inspector on the object that should trigger the sky
+    public static bool cloudTriggeredSky = false; // this is checked by the sky controller
+
+    public static bool isDevMode = true; // Set this globally in the scene
     // Title tracking
-    [Header("Title Tracking")]
+    [Header("Title")]
     public bool isTitleGroup = false;
 
     // === Static Tracking ===
@@ -122,6 +128,7 @@ public class ShaderGraphToonController : MonoBehaviour
             hasShadedOnce = false;
             colorFadeComplete = false;
             holdComplete = false;
+
             ResetTimers();
         }
         ApplyPropertyBlock();
@@ -146,32 +153,55 @@ public class ShaderGraphToonController : MonoBehaviour
         // Ensure AudioSource exists
         audioSource = GetComponent<AudioSource>();
         if (audioSource == null)
-        {
             audioSource = gameObject.AddComponent<AudioSource>();
-        }
 
         audioSource.playOnAwake = false;
-        audioSource.loop = false;                  // ❌ Don't loop
+        audioSource.loop = false;
         audioSource.spatialBlend = isTitleGroup ? 0f : 1f;
-        audioSource.rolloffMode = AudioRolloffMode.Logarithmic; // Optional: realistic fade
-        audioSource.minDistance = 1f;              // Distance before volume starts to drop
-        audioSource.maxDistance = 30f;             // Max audible distance
-        audioSource.volume = isTitleGroup ? 0.7f : 1f; // Or adjust as needed
+        audioSource.rolloffMode = AudioRolloffMode.Logarithmic;
+        audioSource.minDistance = 1f;
+        audioSource.maxDistance = 50f;
+        audioSource.volume = isTitleGroup ? 0.5f : 1f;
 
-
-        // 🔥 Auto-load gaze clips from Resources folder
+        // ✅ Always reload audio clips regardless of serialized state
+        gazeClips = Resources.LoadAll<AudioClip>("Audio/GazeClips/Relaxing");
         if (gazeClips == null || gazeClips.Length == 0)
         {
-            gazeClips = Resources.LoadAll<AudioClip>("Audio/GazeClips");
-            if (gazeClips.Length == 0)
+            Debug.LogWarning("No gaze audio clips found at Resources/Audio/GazeClips/Relaxing");
+        }
+        else
+        {
+            Debug.Log($"✅ Loaded {gazeClips.Length} gaze audio clips from Resources.");
+        }
+
+        if (isDevMode && Application.isPlaying)
+        {
+            currentPaletteIndex = Random.Range(0, colorPalette.Length);
+            targetColor = colorPalette[currentPaletteIndex];
+            previousColor = Color.black;
+
+            if (isCloudToTriggerSky)
             {
-                Debug.LogWarning("No gaze audio clips found at Resources/Audio/GazeClips");
+                // ✅ Cloud starts black, not shaded, and needs to go through full transition
+                currentColor = Color.black;
+                currentShades = initialShades;
+                colorFadeComplete = false;
+                hasShadedOnce = false;
+                holdComplete = false;
             }
             else
             {
-                Debug.Log($"Loaded {gazeClips.Length} gaze audio clips.");
+                // ✅ Everything else is already colored and shaded in dev mode
+                currentColor = targetColor;
+                currentShades = targetShades;
+                colorFadeComplete = true;
+                hasShadedOnce = true;
+                holdComplete = true;
             }
+
+            ApplyPropertyBlock();
         }
+
     }
 
     void Update()
@@ -194,6 +224,12 @@ public class ShaderGraphToonController : MonoBehaviour
 
                     isGazing = true;
                     SetOutlineVisibility(true);
+
+                    if (isCloudToTriggerSky && isDevMode && !cloudTriggeredSky)
+                    {
+                        cloudTriggeredSky = true;
+                        Debug.Log("☁️ Cloud object triggered the sky change in dev mode.");
+                    }
 
                     if (gazeClips.Length > 0)
                     {
@@ -285,6 +321,8 @@ public class ShaderGraphToonController : MonoBehaviour
 
         ApplyPropertyBlock();
         UpdateAudioVolume();
+
+
     }
 
     void ApplyPropertyBlock()
