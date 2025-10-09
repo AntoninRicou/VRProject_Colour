@@ -1,18 +1,21 @@
 using UnityEngine;
 using System.Collections.Generic;
 using System.Collections; // ✅ Needed for IEnumerator
+using System; // <- add
 
 [ExecuteAlways]
 [RequireComponent(typeof(MeshCollider))]
 public class ShaderGraphToonController : MonoBehaviour
 {
+    public static event Action<ShaderGraphToonController> FirstGazed;
+    public bool HasBeenGazedOnce => hasBeenGazedOnce;                 
 
     [Header("Sky Trigger")]
     public bool isCloudToTriggerSky = false; // set this in the Inspector on the object that should trigger the sky
     public static bool cloudTriggeredSky = false; // this is checked by the sky controller
 
     public static bool isDevMode = false; // Set this globally in the scene
-    // Title tracking
+
     [Header("Title")]
     public bool isTitleGroup = false;
 
@@ -39,8 +42,6 @@ public class ShaderGraphToonController : MonoBehaviour
         }
         return true;
     }
-
-
 
     // === Audio ===
     private AudioSource audioSource;
@@ -71,13 +72,26 @@ public class ShaderGraphToonController : MonoBehaviour
     private int currentPaletteIndex = -1;
     private Color previousColor;
 
-    [Header("Shader Graph Properties")]
+    // === Shader Graph Properties ===
     private Color targetColor;
     private Vector2 minMax = new Vector2(0.1f, 0.9f);
 
-    [Header("Transition Settings")]
-    private float colorFadeDuration = 4f;
-    private float shadeFadeDuration = 5f;
+    // === Transition Settings (non-serialized) ===  // ★
+    private float colorFadeDuration = 4f;              // non-title default  // ★
+    private float shadeFadeDuration = 5f;              // non-title default  // ★
+
+    // Title overrides (non-serialized)               // ★
+    private bool useTitleOverrides = true;             // ★
+    private float titleColorFadeDuration = 2.0f;       // ★ (faster color for title)
+    private float titleShadeFadeDuration = 2.0f;       // ★ (faster shade for title)
+    private bool titleHeadStartOnReset = true;         // ★ (gives a snappy pop on reset)
+
+    // Active duration helpers                         // ★
+    private float ActiveColorFadeDuration => (isTitleGroup && useTitleOverrides) ? titleColorFadeDuration : colorFadeDuration;  // ★
+    private float ActiveShadeFadeDuration => (isTitleGroup && useTitleOverrides) ? titleShadeFadeDuration : shadeFadeDuration;  // ★
+
+    // Optional easing for nicer feel                  // ★
+    private static float EaseInOut(float t) => t * t * (3f - 2f * t);                                                           // ★
 
     [Range(0f, 1f)]
     private float initialShades = 1f;
@@ -91,11 +105,11 @@ public class ShaderGraphToonController : MonoBehaviour
     private Color currentColor = Color.black;
     private float currentShades;
 
-    [Header("Hold Settings")]
+    // === Hold Settings ===
     private float holdDuration = 2f;
     private float holdTimer = 0f;
 
-    [Header("Gaze Trigger")]
+    // === Gaze Trigger ===
     public Transform vrCamera;
     [Range(0.8f, 1f)]
     public float lookThreshold = 0.95f;
@@ -121,7 +135,7 @@ public class ShaderGraphToonController : MonoBehaviour
         }
         else
         {
-            currentPaletteIndex = Random.Range(0, colorPalette.Length);
+            currentPaletteIndex = UnityEngine.Random.Range(0, colorPalette.Length);
             targetColor = colorPalette[currentPaletteIndex];
             previousColor = Color.black;
             currentColor = Color.black;
@@ -176,7 +190,7 @@ public class ShaderGraphToonController : MonoBehaviour
 
         if (isDevMode && Application.isPlaying)
         {
-            currentPaletteIndex = Random.Range(0, colorPalette.Length);
+            currentPaletteIndex = UnityEngine.Random.Range(0, colorPalette.Length);
             targetColor = colorPalette[currentPaletteIndex];
             previousColor = Color.black;
 
@@ -201,14 +215,11 @@ public class ShaderGraphToonController : MonoBehaviour
 
             ApplyPropertyBlock();
         }
-
     }
 
     void Update()
     {
         if (!Application.isPlaying) return;
-
-
 
         // --- Gaze Detection ---
         if (vrCamera != null)
@@ -233,7 +244,7 @@ public class ShaderGraphToonController : MonoBehaviour
 
                     if (gazeClips.Length > 0)
                     {
-                        int i = Random.Range(0, gazeClips.Length);
+                        int i = UnityEngine.Random.Range(0, gazeClips.Length);
                         AudioClip clip = gazeClips[i];
 
                         if (audioTransitionCoroutine != null)
@@ -259,6 +270,7 @@ public class ShaderGraphToonController : MonoBehaviour
                 if (!hasBeenGazedOnce)
                 {
                     hasBeenGazedOnce = true;
+                    FirstGazed?.Invoke(this); // <- notify the counter exactly once
                 }
             }
             else
@@ -275,7 +287,6 @@ public class ShaderGraphToonController : MonoBehaviour
                         return;
                     }
                 }
-
             }
         }
 
@@ -285,7 +296,8 @@ public class ShaderGraphToonController : MonoBehaviour
             if (!colorFadeComplete)
             {
                 colorFadeTimer += Time.deltaTime;
-                float t = Mathf.Clamp01(colorFadeTimer / colorFadeDuration);
+                float t = Mathf.Clamp01(colorFadeTimer / ActiveColorFadeDuration); // ★
+                t = EaseInOut(t);                                                  // ★
                 currentColor = Color.Lerp(previousColor, targetColor, t);
                 if (!hasShadedOnce)
                     currentShades = initialShades;
@@ -299,7 +311,8 @@ public class ShaderGraphToonController : MonoBehaviour
             else if (!hasShadedOnce)
             {
                 shadeFadeTimer += Time.deltaTime;
-                float t = Mathf.Clamp01(shadeFadeTimer / shadeFadeDuration);
+                float t = Mathf.Clamp01(shadeFadeTimer / ActiveShadeFadeDuration); // ★
+                t = EaseInOut(t);                                                  // ★
                 currentShades = Mathf.Lerp(initialShades, targetShades, t);
                 if (t >= 1f)
                 {
@@ -321,8 +334,6 @@ public class ShaderGraphToonController : MonoBehaviour
 
         ApplyPropertyBlock();
         UpdateAudioVolume();
-
-
     }
 
     void ApplyPropertyBlock()
@@ -370,6 +381,12 @@ public class ShaderGraphToonController : MonoBehaviour
         previousColor = currentColor;
         currentPaletteIndex = (currentPaletteIndex + 1) % colorPalette.Length;
         targetColor = colorPalette[currentPaletteIndex];
+
+        // Optional head start for title pop
+        if (isTitleGroup && useTitleOverrides && titleHeadStartOnReset) // ★
+        {
+            colorFadeTimer = ActiveColorFadeDuration * 0.35f; // ★
+        }
     }
 
     void ResetVisual()
@@ -398,30 +415,23 @@ public class ShaderGraphToonController : MonoBehaviour
         if (isGazing)
         {
             // Calculate progress based on full visual transition (color + shade)
-            float colorProgress = Mathf.Clamp01(colorFadeTimer / colorFadeDuration);
-            float shadeProgress = Mathf.Clamp01(shadeFadeTimer / shadeFadeDuration);
+            float colorProgress = Mathf.Clamp01(colorFadeTimer / ActiveColorFadeDuration); // ★
+            float shadeProgress = Mathf.Clamp01(shadeFadeTimer / ActiveShadeFadeDuration); // ★
 
             // Use a blend — we want volume to respond immediately to color, and grow with shading
             float progress = hasShadedOnce ? shadeProgress : colorProgress;
 
-            targetVolume = Mathf.Lerp(0f, 1f, progress); // Adjust max volume here if needed
+            targetVolume = Mathf.Lerp(0f, 1f, progress);
 
-            // Start audio if not playing
             if (!audioSource.isPlaying)
                 audioSource.Play();
         }
         else
         {
-            // Fade out gracefully
             targetVolume = audioSource.volume;
         }
 
-        // Smoothly transition to new volume
         audioSource.volume = Mathf.Lerp(audioSource.volume, targetVolume, Time.deltaTime * 4f);
-
-        // Stop only after volume fades out completely
-        // if (!isGazing && audioSource.isPlaying && audioSource.volume <= 0.01f)
-        //     audioSource.Stop();
     }
 
     private IEnumerator SmoothAudioTransition(AudioClip newClip)
@@ -448,5 +458,4 @@ public class ShaderGraphToonController : MonoBehaviour
 
         audioSource.volume = startVolume;
     }
-
 }
