@@ -8,7 +8,7 @@ using System; // <- add
 public class ShaderGraphToonController : MonoBehaviour
 {
     public static event Action<ShaderGraphToonController> FirstGazed;
-    public bool HasBeenGazedOnce => hasBeenGazedOnce;                 
+    public bool HasBeenGazedOnce => hasBeenGazedOnce;
 
     [Header("Sky Trigger")]
     public bool isCloudToTriggerSky = false; // set this in the Inspector on the object that should trigger the sky
