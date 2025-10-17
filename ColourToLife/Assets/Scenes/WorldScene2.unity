@@ -28169,7 +28169,11 @@ MonoBehaviour:
   fadeOut: 0.5
   showOnStart: 0
   delayBeforeHint: 10
-  firstMessage: Look for the title!
+  messages:
+  - Look up!
+  - Search the sky!
+  delayBetweenPrompts: 10
+  maxShows: 0
 --- !u!1001 &1566957872
 PrefabInstance:
   m_ObjectHideFlags: 0

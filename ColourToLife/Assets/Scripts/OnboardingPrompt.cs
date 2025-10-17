@@ -17,17 +17,22 @@ public class OnboardingPrompt : MonoBehaviour
     [Tooltip("Show immediately on Start (bypasses delayed logic).")]
     [SerializeField] private bool showOnStart = false;
 
-    [Tooltip("Seconds to wait after game start before maybe showing the hint.")]
+    [Tooltip("Seconds to wait after game start before maybe showing the first hint.")]
     [SerializeField] private float delayBeforeHint = 10f;
 
-    [SerializeField] private string firstMessage = "Look around";
+    [Header("Messages")]
+    [SerializeField] private string[] messages = { "Look up!", "Search the sky!" };
+    [SerializeField] private float delayBetweenPrompts = 10f; // time between hints after the first
+
+    [Tooltip("Max number of hints to show. <= 0 means unlimited until gaze.")]
+    [SerializeField] private int maxShows = 0;
 
     Coroutine currentRoutine;
     Coroutine delayedRoutine;
 
     // gating
-    bool anyTitleGazed = false;   // updated before we decide to show
-    bool hasShownOnce = false;    // ensure we only show once
+    bool anyTitleGazed = false;   // flipped by event
+    int shownCount = 0;
 
     void Reset()
     {
@@ -43,7 +48,6 @@ public class OnboardingPrompt : MonoBehaviour
 
     void OnEnable()
     {
-        // Listen only to decide whether to show at all
         ShaderGraphToonController.FirstGazed += OnAnyFirstGazedBeforeShow;
     }
 
@@ -56,45 +60,56 @@ public class OnboardingPrompt : MonoBehaviour
     {
         if (showOnStart)
         {
-            BeginShow(firstMessage, showDuration);
+            // Show immediately and start the loop afterward if desired
+            Show(messages.Length > 0 ? messages[0] : "...");
         }
-        else
-        {
-            if (delayedRoutine != null) StopCoroutine(delayedRoutine);
-            delayedRoutine = StartCoroutine(DelayedMaybeShow());
-        }
+
+        if (delayedRoutine != null) StopCoroutine(delayedRoutine);
+        delayedRoutine = StartCoroutine(DelayedMaybeShow());
     }
 
     void OnAnyFirstGazedBeforeShow(ShaderGraphToonController who)
     {
-        if (hasShownOnce) return;            // already showing or shown — ignore
         if (who != null && who.isTitleGroup) // only letters matter
             anyTitleGazed = true;
     }
 
     IEnumerator DelayedMaybeShow()
     {
+        // Wait once before the very first potential hint
         yield return new WaitForSeconds(delayBeforeHint);
 
-        // If player already found a letter, skip the hint
-        if (!anyTitleGazed)
-            BeginShow(firstMessage, showDuration);
+        if (anyTitleGazed || messages == null || messages.Length == 0)
+        {
+            delayedRoutine = null;
+            yield break;
+        }
 
+        int index = 0; // which prompt we're on
+
+        // Loop until gaze OR maxShows reached (<=0 means unlimited)
+        while (!anyTitleGazed && (maxShows <= 0 || shownCount < maxShows))
+        {
+            // Show the current message and wait for it to finish
+            string messageToShow = messages[index];
+            yield return StartCoroutine(ShowRoutine(messageToShow, showDuration));
+            shownCount++;
+
+            if (anyTitleGazed) break;
+
+            // Advance index (cycle)
+            index = (index + 1) % messages.Length;
+
+            // Wait between prompts before showing the next one
+            yield return new WaitForSeconds(delayBetweenPrompts);
+        }
+
+        // Done deciding about hints
+        ShaderGraphToonController.FirstGazed -= OnAnyFirstGazedBeforeShow;
         delayedRoutine = null;
     }
 
-    void BeginShow(string message, float duration)
-    {
-        if (hasShownOnce) return;
-        hasShownOnce = true;
-
-        // We no longer need to listen for gazes (we won't dismiss)
-        ShaderGraphToonController.FirstGazed -= OnAnyFirstGazedBeforeShow;
-
-        Show(message, duration);
-    }
-
-    /// Public API (kept same)
+    // Public API
     public void Show(string message, float duration = 3f)
     {
         if (currentRoutine != null) StopCoroutine(currentRoutine);
@@ -106,9 +121,7 @@ public class OnboardingPrompt : MonoBehaviour
         if (promptText) promptText.text = message;
 
         if (canvasGroup) yield return FadeTo(1f, fadeIn);
-
         yield return new WaitForSeconds(duration);
-
         if (canvasGroup) yield return FadeTo(0f, fadeOut);
 
         currentRoutine = null;

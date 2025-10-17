@@ -14,7 +14,7 @@ public class HeadsetStillnessRestart : MonoBehaviour
     [Tooltip("Seconds the off-head condition (tilt/pitch OR pause) must hold before restarting.")]
     public float restartDelay = 5f;
     [Tooltip("Seconds the UPRIGHT off-head condition must hold before restarting.")]
-    public float uprightRestartDelay = 18f;          // longer to avoid false positives
+    public float uprightRestartDelay = 5f;          // longer to avoid false positives
     [Tooltip("How often to poll (seconds).")]
     public float pollInterval = 0.25f;
     [Tooltip("Ignore monitoring for the first seconds after scene load.")]
@@ -37,19 +37,20 @@ public class HeadsetStillnessRestart : MonoBehaviour
     public float uprightTiltMax = 15f;
     [Tooltip("Max pitch from horizon (deg) to be considered 'looking forward'.")]
     public float uprightPitchMax = 15f;
-    [Tooltip("Require both controllers NOT tracked to accept upright off-head.")]
-    public bool requireControllersUntrackedForUpright = true;
+    // NOTE: requireControllersUntrackedForUpright and controllerVelocityInputThreshold are removed
 
     [Header("Input gate")]
     [Tooltip("Cancel countdown if any input in the last N seconds.")]
-    public float noInputWindow = 2f;
+    public float noInputWindow = 0f;
+    // NOTE: This input gate will now rely ONLY on any non-HMD input you implement later (e.g., keyboard, hand gestures).
+    // If your game is truly passive (only HMD movement), you can set noInputWindow to a very high value or 0 to ignore it.
 
     [Header("Debug")]
     public bool debugLog = false;
 
     // internal state
     private InputDevice headDevice;
-    private readonly List<InputDevice> handDevices = new();
+    // Removed: private readonly List<InputDevice> handDevices = new();
     private bool countingDown = false;
     private float holdTimer = 0f;
     private float startTime;
@@ -61,29 +62,15 @@ public class HeadsetStillnessRestart : MonoBehaviour
         startTime = Time.unscaledTime;
     }
 
-    void OnApplicationFocus(bool hasFocus)
-    {
-        if (!hasFocus)
-        {
-            if (debugLog) Debug.Log("[StillnessRestart] Focus lost → prime off-head countdown.");
-            // Start counting visually; the pause handler will handle wall-clock if OS actually pauses.
-            countingDown = true;
-            holdTimer = 0f;
-        }
-    }
-
-
     void OnApplicationPause(bool paused)
     {
         if (paused)
         {
-            // Quest reliably pauses on HMD removal (power button or taking off headset)
             if (debugLog) Debug.Log("[StillnessRestart] Application paused → start countdown (wall-clock).");
             pausedCountdown = true;
             wasPaused = true;
             pauseStartUtc = System.DateTime.UtcNow;
 
-            // optional: also stop any in-scene countdown so we don't double count
             holdTimer = 0f;
         }
         else
@@ -101,20 +88,19 @@ public class HeadsetStillnessRestart : MonoBehaviour
                 }
                 else
                 {
-                    // Finish the remaining time (uses realtime while app is active)
                     float remaining = restartDelay - pausedSecs;
                     if (debugLog) Debug.Log($"[StillnessRestart] Scheduling remaining {remaining:F2}s to restart.");
                     StartCoroutine(RestartAfterRemaining(remaining));
                 }
             }
 
-            // clear pause flags
             wasPaused = false;
             pausedCountdown = false;
             holdTimer = 0f;
             if (debugLog) Debug.Log("[StillnessRestart] Application resumed → cancel in-loop countdown.");
         }
     }
+
     private IEnumerator RestartAfterRemaining(float seconds)
     {
         if (seconds > 0f)
@@ -145,23 +131,24 @@ public class HeadsetStillnessRestart : MonoBehaviour
                 if (heads.Count > 0) headDevice = heads[0];
             }
 
-            RefreshHands();
-            TrackRecentInput();
+            // NOTE: RefreshHands and TrackRecentInput are removed.
+            // You should manually update lastInputTime here if you have other input methods (e.g. keyboard, hand gestures).
+            // For now, noRecentInput is always true if no other input is implemented here.
+            bool noRecentInput = (Time.unscaledTime - lastInputTime) >= noInputWindow;
 
-            // ----- STILLNESS -----
+
+            // ----- 1. STILLNESS (HMD) -----
             Vector3 v = Vector3.zero, w = Vector3.zero;
-            bool hasVel = false, hasAng = false;
             bool veryStill = false;
-
             if (headDevice.isValid)
             {
-                hasVel = headDevice.TryGetFeatureValue(CommonUsages.deviceVelocity, out v);
-                hasAng = headDevice.TryGetFeatureValue(CommonUsages.deviceAngularVelocity, out w);
+                bool hasVel = headDevice.TryGetFeatureValue(CommonUsages.deviceVelocity, out v);
+                bool hasAng = headDevice.TryGetFeatureValue(CommonUsages.deviceAngularVelocity, out w);
                 if (hasVel && hasAng)
                     veryStill = (v.magnitude < velocityThreshold) && (w.magnitude < angularVelocityThreshold);
             }
 
-            // ----- ORIENTATION (via camera) -----
+            // ----- 2. ORIENTATION (via camera) -----
             bool offHeadByTiltPitch = false;
             bool uprightPose = false;
 
@@ -172,8 +159,8 @@ public class HeadsetStillnessRestart : MonoBehaviour
                 Vector3 hmdUp = cam.transform.up;
                 Vector3 hmdFwd = cam.transform.forward;
 
-                float tilt = Vector3.Angle(hmdUp, upWorld);                       // 0° upright, 90° sideways
-                float pitchFromHorizon = 90f - Vector3.Angle(hmdFwd, upWorld);    // +90 up, -90 down
+                float tilt = Vector3.Angle(hmdUp, upWorld);
+                float pitchFromHorizon = 90f - Vector3.Angle(hmdFwd, upWorld);
 
                 bool bigTilt = tilt >= minTiltDegrees;
                 bool extremePitch = Mathf.Abs(pitchFromHorizon) >= extremePitchDegrees;
@@ -186,16 +173,10 @@ public class HeadsetStillnessRestart : MonoBehaviour
                 uprightPose = smallTilt && smallPitch;
             }
 
-            // ----- CONTROLLERS TRACKED? (for upright gate) -----
-            bool anyControllerTracked = ControllersTracked();
-
-            // ----- INPUT RECENCY -----
-            bool noRecentInput = (Time.unscaledTime - lastInputTime) >= noInputWindow;
-
-            // ----- CANDIDATES -----
+            // ----- CANDIDATES (Simplified) -----
             bool candidateTiltPitch = veryStill && offHeadByTiltPitch && noRecentInput;
-            bool candidateUpright = veryStill && uprightPose && noRecentInput &&
-                                      (!requireControllersUntrackedForUpright || !anyControllerTracked);
+            // Upright candidate no longer needs the controller check
+            bool candidateUpright = veryStill && uprightPose && noRecentInput;
 
             // include pause as valid trigger
             bool shouldCount = pausedCountdown || candidateTiltPitch || candidateUpright;
@@ -244,44 +225,6 @@ public class HeadsetStillnessRestart : MonoBehaviour
     {
         countingDown = false;
         holdTimer = 0f;
-    }
-
-    void RefreshHands()
-    {
-        handDevices.Clear();
-        InputDevices.GetDevicesWithCharacteristics(InputDeviceCharacteristics.HeldInHand, handDevices);
-    }
-
-    void TrackRecentInput()
-    {
-        bool activity = false;
-        foreach (var dev in handDevices)
-        {
-            if (!dev.isValid) continue;
-            if (dev.TryGetFeatureValue(CommonUsages.primaryButton, out bool pb) && pb) activity = true;
-            if (dev.TryGetFeatureValue(CommonUsages.secondaryButton, out bool sb) && sb) activity = true;
-            if (dev.TryGetFeatureValue(CommonUsages.trigger, out float trig) && trig > 0.05f) activity = true;
-            if (dev.TryGetFeatureValue(CommonUsages.grip, out float grip) && grip > 0.05f) activity = true;
-            if (dev.TryGetFeatureValue(CommonUsages.menuButton, out bool menu) && menu) activity = true;
-            if (dev.TryGetFeatureValue(CommonUsages.primary2DAxis, out Vector2 axis) && axis.sqrMagnitude > 0.01f) activity = true;
-        }
-        if (activity) lastInputTime = Time.unscaledTime;
-    }
-
-    bool ControllersTracked()
-    {
-        // Use XRNodeState to check tracked flags for LeftHand/RightHand
-        var nodes = new List<XRNodeState>();
-        InputTracking.GetNodeStates(nodes);
-        bool leftTracked = false, rightTracked = false;
-
-        for (int i = 0; i < nodes.Count; i++)
-        {
-            var ns = nodes[i];
-            if (ns.nodeType == XRNode.LeftHand) leftTracked = ns.tracked || leftTracked;
-            if (ns.nodeType == XRNode.RightHand) rightTracked = ns.tracked || rightTracked;
-        }
-        return leftTracked || rightTracked;
     }
 
     void RestartScene()
